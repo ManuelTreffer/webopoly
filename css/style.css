@@ -1,43 +1,178 @@
-body{
+body {
     font-family: Arial;
-    background-color: gray;
-    display: flex;
+    background-color: lightgray;
+    /*display: flex;*/
     color: white;
 }
 
-.left{
+.navbar{
+    background-color: white;
+
+}
+.nav-link{
+    color: black;
+}
+.nav-link:hover{
+    color: white;
+    background-color: darkgray;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    border-radius: 5px;
+}
+
+
+
+
+.left {
     width: 15%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 
-    position: relative;
 
+}
 
-
- }
-
-.middle{
+.middle {
     width: 65%;
-
-
+    padding-top: 30px;
 
 }
-.right{
-    width: 20%;
+
+.right {
+    padding-right: 30px;
+    padding-top: 30px;
     /*background-color: #e0a800;*/
-    padding-left: 100px;
 
 }
 
-.spielfeld{
+.spielfeld {
     margin: auto;
     position: absolute;
     /*width: inherit;*/
-    height: 90%;
+    height: 80%;
 }
 
-.wuerfel_1{
+.wuerfel_1 {
+
+    margin: auto;
+}
+
+#wuerfel{
+    border-radius: 17px;
+}
+
+/*
+
+!!!!!!SO ZENTRIERT MAN DEN INHALT EINER DIV BOX!!!!!!!!!!
+
+
+*/
+
+.logo {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.logo_image {
+
+    width: 20%;
+    margin: auto;
+    padding-top: 20px;
+
+}
+
+.spieleranzahl {
+
+    padding-top: 2.5em;
+    align-items: center;
+    justify-content: center;
+    width: 30%;
+    margin: auto;
+
+}
+
+.inner {
+
+    display: flex;
+    flex-direction: column;
+}
+
+.btn {
+    align-items: center;
+    justify-content: center;
+
+    margin: auto;
+    border-radius: 5px;
+
+}
+
+.zurueck {
+    align-items: center;
+    justify-content: center;
+    padding-top: 12px;
+    margin: auto;
+
+}
+
+.zurueck:visited {
+    color: white;
+    text-decoration: none;
+}
+
+h3 {
+    text-align: center;
+}
+
+.spielernamen {
+
+    align-items: center;
+    justify-content: center;
+    width: 30%;
+    margin: auto;
+
+}
+
+.mb-3 {
+    padding-top: 0;
+    padding-bottom: 0;
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+.awesame_container{
+
+    display: flex;
+}
+
+
+.footer {
+    background-color: white;
+    color: black;
+
     position: absolute;
-    margin-left: 25%;
-    margin-bottom: 25%;
-    margin-right: 25%;
-    margin-top: 25%;
+    bottom: 0;
+    width: 100%;
+    line-height: 2.5em;
+    text-align: center;
+
+}
+
+.ranking_endstand{
+    width: 40%;
+   margin: auto;
+    font-weight: bold;
+
+}
+
+.tr2{
+    opacity: 0.75;
+}
+
+.tr3{
+    opacity: 0.5;
+}
+.tr4{
+    opacity: 0.25;
 }
