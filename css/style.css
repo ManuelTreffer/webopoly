@@ -7,11 +7,12 @@ body {
 
 .navbar{
     background-color: white;
-
 }
+
 .nav-link{
     color: black;
 }
+
 .nav-link:hover{
     color: white;
     background-color: darkgray;
@@ -20,16 +21,11 @@ body {
     border-radius: 5px;
 }
 
-
-
-
 .left {
     width: 15%;
-    display: flex;
     align-items: center;
     justify-content: center;
-
-
+    height: 400px;
 }
 
 .middle {
@@ -42,7 +38,6 @@ body {
     padding-right: 30px;
     padding-top: 30px;
     /*background-color: #e0a800;*/
-
 }
 
 .spielfeld {
@@ -53,19 +48,25 @@ body {
 }
 
 .wuerfel_1 {
-
     margin: auto;
+    display: table;
+
+}
+
+.wuerfel_1 image {
+    display: table-cell;
+    vertical-align: center;
 }
 
 #wuerfel{
     border-radius: 17px;
+    margin: auto;
+    display: table-cell;
+    vertical-align: center;
 }
 
 /*
-
 !!!!!!SO ZENTRIERT MAN DEN INHALT EINER DIV BOX!!!!!!!!!!
-
-
 */
 
 .logo {
