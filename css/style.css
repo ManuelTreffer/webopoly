@@ -116,6 +116,11 @@ body {
 
 }
 
+.zurueck a {
+    text-decoration: none;
+    color: white;
+}
+
 .zurueck:visited {
     color: white;
     text-decoration: none;

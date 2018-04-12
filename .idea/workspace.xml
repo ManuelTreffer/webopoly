@@ -2,11 +2,18 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="9e2c4bfd-dbf5-427a-a3f2-0af8af31bbdf" name="Default" comment="">
+<<<<<<< HEAD
       <change beforePath="" afterPath="$PROJECT_DIR$/12_04_2018/counter.js" />
       <change beforePath="" afterPath="$PROJECT_DIR$/12_04_2018/overlay.html" />
       <change beforePath="" afterPath="$PROJECT_DIR$/12_04_2018/questions_array.js" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change beforePath="$PROJECT_DIR$/09_04_2018/spieleranzahl/spieleranzahl.html" afterPath="$PROJECT_DIR$/09_04_2018/spieleranzahl/spieleranzahl.html" />
+=======
+      <change beforePath="" afterPath="$PROJECT_DIR$/marco/anleitung.html" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/marco/ausrichtung.css" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/marco/ausrichtungWuerfel.html" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+>>>>>>> 9ba3dee5db0e2fd17171c5c3c143c2b568e09e52
       <change beforePath="$PROJECT_DIR$/css/style.css" afterPath="$PROJECT_DIR$/css/style.css" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -18,31 +25,62 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+<<<<<<< HEAD
       <file leaf-file-name="overlay.html" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/12_04_2018/overlay.html">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="278">
               <caret line="189" column="97" lean-forward="false" selection-start-line="189" selection-start-column="97" selection-end-line="189" selection-end-column="97" />
+=======
+      <file leaf-file-name="ausrichtungWuerfel.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/marco/ausrichtungWuerfel.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="180">
+              <caret line="9" column="0" lean-forward="true" selection-start-line="9" selection-start-column="0" selection-end-line="9" selection-end-column="0" />
+>>>>>>> 9ba3dee5db0e2fd17171c5c3c143c2b568e09e52
               <folding />
             </state>
           </provider>
         </entry>
       </file>
+<<<<<<< HEAD
       <file leaf-file-name="questions_array.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/12_04_2018/questions_array.js">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="570">
               <caret line="38" column="70" lean-forward="false" selection-start-line="38" selection-start-column="70" selection-end-line="38" selection-end-column="70" />
+=======
+      <file leaf-file-name="ausrichtung.css" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/marco/ausrichtung.css">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="260">
+              <caret line="13" column="18" lean-forward="true" selection-start-line="13" selection-start-column="18" selection-end-line="13" selection-end-column="18" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="style.css" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/css/style.css">
+      <file leaf-file-name="spielfeld.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/09_04_2018/spielfeld/spielfeld.html">
           <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-165">
+              <caret line="45" column="0" lean-forward="true" selection-start-line="45" selection-start-column="0" selection-end-line="45" selection-end-column="0" />
+>>>>>>> 9ba3dee5db0e2fd17171c5c3c143c2b568e09e52
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="zentrieren.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/marco/zentrieren.html">
+          <provider selected="true" editor-type-id="text-editor">
+<<<<<<< HEAD
             <state relative-caret-position="535">
               <caret line="195" column="28" lean-forward="false" selection-start-line="195" selection-start-column="28" selection-end-line="195" selection-end-column="28" />
+=======
+            <state relative-caret-position="100">
+              <caret line="5" column="33" lean-forward="false" selection-start-line="5" selection-start-column="33" selection-end-line="5" selection-end-column="33" />
+>>>>>>> 9ba3dee5db0e2fd17171c5c3c143c2b568e09e52
               <folding />
             </state>
           </provider>
@@ -78,6 +116,7 @@
         <option value="$PROJECT_DIR$/spielfeld/spielfeld.html" />
         <option value="$PROJECT_DIR$/09_04_2018/wuerfel/wuerfel.html" />
         <option value="$PROJECT_DIR$/09_04_2018/spielernamen/spielernamen.html" />
+<<<<<<< HEAD
         <option value="$PROJECT_DIR$/09_04_2018/spielfeld/spielfeld.html" />
         <option value="$PROJECT_DIR$/09_04_2018/endstand/endstand.html" />
         <option value="$PROJECT_DIR$/09_04_2018/spieleranzahl/spieleranzahl.html" />
@@ -88,6 +127,16 @@
         <option value="$PROJECT_DIR$/12_04_2018/test.html" />
         <option value="$PROJECT_DIR$/css/style.css" />
         <option value="$PROJECT_DIR$/12_04_2018/overlay.html" />
+=======
+        <option value="$PROJECT_DIR$/09_04_2018/spieleranzahl/spieleranzahl.html" />
+        <option value="$PROJECT_DIR$/09_04_2018/spielfeld/spielfeld.html" />
+        <option value="$PROJECT_DIR$/09_04_2018/endstand/endstand.html" />
+        <option value="$PROJECT_DIR$/css/style.css" />
+        <option value="$PROJECT_DIR$/marco/anleitung.html" />
+        <option value="$PROJECT_DIR$/marco/ausrichtungWuerfel.html" />
+        <option value="$PROJECT_DIR$/marco/zentrieren.html" />
+        <option value="$PROJECT_DIR$/marco/ausrichtung.css" />
+>>>>>>> 9ba3dee5db0e2fd17171c5c3c143c2b568e09e52
       </list>
     </option>
   </component>
@@ -98,10 +147,10 @@
     <sorting>DEFINITION_ORDER</sorting>
   </component>
   <component name="PhpWorkspaceProjectConfiguration" backward_compatibility_performed="true" />
-  <component name="ProjectFrameBounds">
-    <option name="y" value="42" />
-    <option name="width" value="1440" />
-    <option name="height" value="747" />
+  <component name="ProjectFrameBounds" extendedState="6">
+    <option name="x" value="953" />
+    <option name="width" value="974" />
+    <option name="height" value="1047" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectView">
@@ -135,12 +184,16 @@
             <path>
               <item name="webopoly" type="b2602c69:ProjectViewProjectNode" />
               <item name="webopoly" type="2a2b976b:PhpTreeStructureProvider$1" />
+<<<<<<< HEAD
               <item name="12_04_2018" type="2a2b976b:PhpTreeStructureProvider$1" />
             </path>
             <path>
               <item name="webopoly" type="b2602c69:ProjectViewProjectNode" />
               <item name="webopoly" type="2a2b976b:PhpTreeStructureProvider$1" />
               <item name="images" type="2a2b976b:PhpTreeStructureProvider$1" />
+=======
+              <item name="marco" type="2a2b976b:PhpTreeStructureProvider$1" />
+>>>>>>> 9ba3dee5db0e2fd17171c5c3c143c2b568e09e52
             </path>
           </expand>
           <select />
@@ -154,6 +207,7 @@
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="DefaultHtmlFileTemplate" value="HTML File" />
     <property name="list.type.of.created.stylesheet" value="CSS" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
@@ -198,31 +252,50 @@
       <workItem from="1523276793237" duration="478000" />
       <workItem from="1523277883012" duration="967000" />
       <workItem from="1523279811702" duration="386000" />
+<<<<<<< HEAD
       <workItem from="1523280442104" duration="11138000" />
       <workItem from="1523348504084" duration="37000" />
       <workItem from="1523348546406" duration="1000" />
       <workItem from="1523369316042" duration="588000" />
       <workItem from="1523522410836" duration="4812000" />
       <workItem from="1523530733136" duration="3213000" />
+=======
+      <workItem from="1523280442104" duration="11032000" />
+      <workItem from="1523297542639" duration="471000" />
+      <workItem from="1523302212884" duration="62000" />
+      <workItem from="1523353012826" duration="465000" />
+      <workItem from="1523356710412" duration="344000" />
+      <workItem from="1523363329927" duration="2664000" />
+>>>>>>> 9ba3dee5db0e2fd17171c5c3c143c2b568e09e52
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
+<<<<<<< HEAD
     <option name="totallyTimeSpent" value="25162000" />
+=======
+    <option name="totallyTimeSpent" value="20411000" />
+>>>>>>> 9ba3dee5db0e2fd17171c5c3c143c2b568e09e52
   </component>
   <component name="ToolWindowManager">
-    <frame x="0" y="42" width="1440" height="747" extended-state="0" />
+    <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.11145833" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Docker" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="false" weight="0.33" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32954547" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+<<<<<<< HEAD
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
+=======
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+>>>>>>> 9ba3dee5db0e2fd17171c5c3c143c2b568e09e52
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.08444444" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
@@ -247,7 +320,11 @@
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/09_04_2018/endstand/endstand.html">
       <provider selected="true" editor-type-id="text-editor">
+<<<<<<< HEAD
         <state relative-caret-position="660">
+=======
+        <state relative-caret-position="880">
+>>>>>>> 9ba3dee5db0e2fd17171c5c3c143c2b568e09e52
           <caret line="44" column="64" lean-forward="false" selection-start-line="44" selection-start-column="64" selection-end-line="44" selection-end-column="64" />
           <folding />
         </state>
@@ -255,7 +332,11 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/09_04_2018/spielernamen/spielernamen.html">
       <provider selected="true" editor-type-id="text-editor">
+<<<<<<< HEAD
         <state relative-caret-position="540">
+=======
+        <state relative-caret-position="720">
+>>>>>>> 9ba3dee5db0e2fd17171c5c3c143c2b568e09e52
           <caret line="36" column="127" lean-forward="false" selection-start-line="36" selection-start-column="73" selection-end-line="36" selection-end-column="127" />
           <folding />
         </state>
@@ -263,8 +344,13 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/css/style.css">
       <provider selected="true" editor-type-id="text-editor">
+<<<<<<< HEAD
         <state relative-caret-position="2640">
           <caret line="176" column="16" lean-forward="false" selection-start-line="176" selection-start-column="16" selection-end-line="176" selection-end-column="16" />
+=======
+        <state relative-caret-position="2400">
+          <caret line="120" column="17" lean-forward="false" selection-start-line="120" selection-start-column="17" selection-end-line="120" selection-end-column="17" />
+>>>>>>> 9ba3dee5db0e2fd17171c5c3c143c2b568e09e52
           <folding />
         </state>
       </provider>
@@ -279,7 +365,11 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/09_04_2018/spielfeld/spielfeld.html">
       <provider selected="true" editor-type-id="text-editor">
+<<<<<<< HEAD
         <state relative-caret-position="1260">
+=======
+        <state relative-caret-position="1680">
+>>>>>>> 9ba3dee5db0e2fd17171c5c3c143c2b568e09e52
           <caret line="84" column="56" lean-forward="false" selection-start-line="84" selection-start-column="56" selection-end-line="84" selection-end-column="56" />
           <folding />
         </state>
@@ -287,13 +377,18 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/09_04_2018/endstand/endstand.html">
       <provider selected="true" editor-type-id="text-editor">
+<<<<<<< HEAD
         <state relative-caret-position="660">
+=======
+        <state relative-caret-position="880">
+>>>>>>> 9ba3dee5db0e2fd17171c5c3c143c2b568e09e52
           <caret line="44" column="64" lean-forward="false" selection-start-line="44" selection-start-column="64" selection-end-line="44" selection-end-column="64" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/09_04_2018/spielernamen/spielernamen.html">
+<<<<<<< HEAD
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="540">
           <caret line="36" column="127" lean-forward="false" selection-start-line="36" selection-start-column="73" selection-end-line="36" selection-end-column="127" />
@@ -409,33 +504,135 @@
     <entry file="file://$PROJECT_DIR$/index.html" />
     <entry file="file://$PROJECT_DIR$/spielfeld.php" />
     <entry file="file://$PROJECT_DIR$/../../../../Ferrarischule/5. Klasse/AINF/MATURA/JS_Beispiele/Javascript/JS_Wuerfel/index.html">
+=======
+>>>>>>> 9ba3dee5db0e2fd17171c5c3c143c2b568e09e52
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="795">
-          <caret line="53" column="40" lean-forward="false" selection-start-line="53" selection-start-column="40" selection-end-line="53" selection-end-column="40" />
+        <state relative-caret-position="720">
+          <caret line="36" column="127" lean-forward="false" selection-start-line="36" selection-start-column="73" selection-end-line="36" selection-end-column="127" />
+          <folding />
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/css/style.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="2400">
+          <caret line="120" column="17" lean-forward="false" selection-start-line="120" selection-start-column="17" selection-end-line="120" selection-end-column="17" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/09_04_2018/spieleranzahl/spieleranzahl.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/09_04_2018/spielfeld/spielfeld.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1680">
+          <caret line="84" column="56" lean-forward="false" selection-start-line="84" selection-start-column="56" selection-end-line="84" selection-end-column="56" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/09_04_2018/endstand/endstand.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="880">
+          <caret line="44" column="64" lean-forward="false" selection-start-line="44" selection-start-column="64" selection-end-line="44" selection-end-column="64" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/09_04_2018/spielernamen/spielernamen.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="720">
+          <caret line="36" column="127" lean-forward="false" selection-start-line="36" selection-start-column="73" selection-end-line="36" selection-end-column="127" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/css/style.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="2400">
+          <caret line="120" column="17" lean-forward="false" selection-start-line="120" selection-start-column="17" selection-end-line="120" selection-end-column="17" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/09_04_2018/spieleranzahl/spieleranzahl.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="880">
+          <caret line="44" column="83" lean-forward="false" selection-start-line="44" selection-start-column="83" selection-end-line="44" selection-end-column="83" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/09_04_2018/spielfeld/spielfeld.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1680">
+          <caret line="84" column="56" lean-forward="false" selection-start-line="84" selection-start-column="56" selection-end-line="84" selection-end-column="56" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/09_04_2018/spielernamen/spielernamen.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="720">
+          <caret line="36" column="127" lean-forward="false" selection-start-line="36" selection-start-column="73" selection-end-line="36" selection-end-column="127" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/css/style.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="3520">
+          <caret line="176" column="16" lean-forward="false" selection-start-line="176" selection-start-column="16" selection-end-line="176" selection-end-column="16" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+<<<<<<< HEAD
+=======
+    <entry file="file://$PROJECT_DIR$/09_04_2018/endstand/endstand.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="880">
+          <caret line="44" column="64" lean-forward="false" selection-start-line="44" selection-start-column="64" selection-end-line="44" selection-end-column="64" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/09_04_2018/wuerfel/wuerfel.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/09_04_2018/wuerfel/css/style.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="75">
+          <caret line="5" column="0" lean-forward="true" selection-start-line="5" selection-start-column="0" selection-end-line="5" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/09_04_2018/slides/slides.html" />
+    <entry file="file://$PROJECT_DIR$/spielfeld/css/style.css" />
+    <entry file="file://$PROJECT_DIR$/09_04_2018/spielfeld/spielfeld.html" />
+    <entry file="file://$PROJECT_DIR$/index.html" />
+    <entry file="file://$PROJECT_DIR$/spielfeld.php" />
+    <entry file="file://C:/../Ferrarischule/5. Klasse/AINF/MATURA/JS_Beispiele/Javascript/JS_Wuerfel/index.html" />
     <entry file="file://$PROJECT_DIR$/css/style.css" />
     <entry file="file://$PROJECT_DIR$/php/wurefel.php" />
     <entry file="file://$PROJECT_DIR$/spielfeld.html" />
-    <entry file="file://$PROJECT_DIR$/../../../../Ferrarischule/3. Klasse/AINF Leeb/zufall.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="9" selection-end-column="2" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://C:/../Ferrarischule/3. Klasse/AINF Leeb/zufall.php" />
     <entry file="file://$PROJECT_DIR$/php/wurefel.php" />
     <entry file="file://$PROJECT_DIR$/index.html" />
     <entry file="file://$PROJECT_DIR$/spielfeld.php" />
     <entry file="file://$PROJECT_DIR$/spielfeld.html" />
-    <entry file="file://$PROJECT_DIR$/../../../../Ferrarischule/5. Klasse/AINF/MATURA/JS_Beispiele/Javascript/JS_Wuerfel/index.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="15">
-          <caret line="53" column="40" lean-forward="false" selection-start-line="53" selection-start-column="40" selection-end-line="53" selection-end-column="40" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://C:/../Ferrarischule/5. Klasse/AINF/MATURA/JS_Beispiele/Javascript/JS_Wuerfel/index.html" />
+>>>>>>> 9ba3dee5db0e2fd17171c5c3c143c2b568e09e52
     <entry file="file://$PROJECT_DIR$/09_04_2018/slides/slides.html" />
     <entry file="file://$PROJECT_DIR$/spielfeld/css/style.css.map" />
     <entry file="file://$PROJECT_DIR$/spielfeld/css/style.css" />
@@ -444,6 +641,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="75">
           <caret line="5" column="0" lean-forward="false" selection-start-line="5" selection-start-column="0" selection-end-line="5" selection-end-column="0" />
+<<<<<<< HEAD
         </state>
       </provider>
     </entry>
@@ -459,37 +657,21 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="122">
           <caret line="9" column="4" lean-forward="false" selection-start-line="9" selection-start-column="4" selection-end-line="9" selection-end-column="4" />
-          <folding />
+=======
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/09_04_2018/spielfeld/spielfeld.html">
+    <entry file="file://$PROJECT_DIR$/css/style.scss" />
+    <entry file="file://$PROJECT_DIR$/09_04_2018/wuerfel/wuerfel.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="484">
-          <caret line="71" column="39" lean-forward="false" selection-start-line="71" selection-start-column="39" selection-end-line="71" selection-end-column="39" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/12_04_2018/test.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="105">
-          <caret line="7" column="21" lean-forward="false" selection-start-line="7" selection-start-column="21" selection-end-line="7" selection-end-column="21" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/css/style.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="535">
-          <caret line="195" column="28" lean-forward="false" selection-start-line="195" selection-start-column="28" selection-end-line="195" selection-end-column="28" />
-          <folding />
+        <state relative-caret-position="180">
+          <caret line="13" column="38" lean-forward="false" selection-start-line="13" selection-start-column="38" selection-end-line="13" selection-end-column="52" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/09_04_2018/spielernamen/spielernamen.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="540">
+        <state relative-caret-position="720">
           <caret line="36" column="127" lean-forward="false" selection-start-line="36" selection-start-column="73" selection-end-line="36" selection-end-column="127" />
           <folding />
         </state>
@@ -497,8 +679,92 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/09_04_2018/endstand/endstand.html">
       <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="880">
+          <caret line="44" column="64" lean-forward="false" selection-start-line="44" selection-start-column="64" selection-end-line="44" selection-end-column="64" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/css/style.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="2400">
+          <caret line="120" column="17" lean-forward="false" selection-start-line="120" selection-start-column="17" selection-end-line="120" selection-end-column="17" />
+>>>>>>> 9ba3dee5db0e2fd17171c5c3c143c2b568e09e52
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/09_04_2018/spielfeld/spielfeld.html">
+      <provider selected="true" editor-type-id="text-editor">
+<<<<<<< HEAD
+        <state relative-caret-position="484">
+          <caret line="71" column="39" lean-forward="false" selection-start-line="71" selection-start-column="39" selection-end-line="71" selection-end-column="39" />
+=======
+        <state relative-caret-position="80">
+          <caret line="4" column="52" lean-forward="false" selection-start-line="4" selection-start-column="52" selection-end-line="4" selection-end-column="52" />
+>>>>>>> 9ba3dee5db0e2fd17171c5c3c143c2b568e09e52
+          <folding />
+        </state>
+      </provider>
+    </entry>
+<<<<<<< HEAD
+    <entry file="file://$PROJECT_DIR$/12_04_2018/test.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="105">
+          <caret line="7" column="21" lean-forward="false" selection-start-line="7" selection-start-column="21" selection-end-line="7" selection-end-column="21" />
+=======
+    <entry file="file://$PROJECT_DIR$/marco/anleitung.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="240">
+          <caret line="12" column="0" lean-forward="false" selection-start-line="12" selection-start-column="0" selection-end-line="12" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/marco/ausrichtungWuerfel.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="180">
+          <caret line="9" column="0" lean-forward="true" selection-start-line="9" selection-start-column="0" selection-end-line="9" selection-end-column="0" />
+>>>>>>> 9ba3dee5db0e2fd17171c5c3c143c2b568e09e52
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/css/style.css">
+      <provider selected="true" editor-type-id="text-editor">
+<<<<<<< HEAD
+        <state relative-caret-position="535">
+          <caret line="195" column="28" lean-forward="false" selection-start-line="195" selection-start-column="28" selection-end-line="195" selection-end-column="28" />
+=======
+        <state relative-caret-position="-165">
+          <caret line="45" column="0" lean-forward="true" selection-start-line="45" selection-start-column="0" selection-end-line="45" selection-end-column="0" />
+>>>>>>> 9ba3dee5db0e2fd17171c5c3c143c2b568e09e52
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/marco/zentrieren.html">
+      <provider selected="true" editor-type-id="text-editor">
+<<<<<<< HEAD
+        <state relative-caret-position="540">
+          <caret line="36" column="127" lean-forward="false" selection-start-line="36" selection-start-column="73" selection-end-line="36" selection-end-column="127" />
+=======
+        <state relative-caret-position="100">
+          <caret line="5" column="33" lean-forward="false" selection-start-line="5" selection-start-column="33" selection-end-line="5" selection-end-column="33" />
+>>>>>>> 9ba3dee5db0e2fd17171c5c3c143c2b568e09e52
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/marco/ausrichtung.css">
+      <provider selected="true" editor-type-id="text-editor">
+<<<<<<< HEAD
         <state relative-caret-position="595">
           <caret line="44" column="64" lean-forward="false" selection-start-line="44" selection-start-column="64" selection-end-line="44" selection-end-column="64" />
+=======
+        <state relative-caret-position="260">
+          <caret line="13" column="18" lean-forward="true" selection-start-line="13" selection-start-column="18" selection-end-line="13" selection-end-column="18" />
+>>>>>>> 9ba3dee5db0e2fd17171c5c3c143c2b568e09e52
           <folding />
         </state>
       </provider>
