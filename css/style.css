@@ -196,8 +196,27 @@ h3 {
     cursor: pointer; /* Add a pointer on hover */
 }
 
-#points_no_btn{
-    align-items: center;
-    justify-content: center;
-    margin: auto;
+#second_overlay{
+
+    position: fixed; /* Sit on top of the page content */
+    width: 60%; /* Full width (cover the whole page) */
+    height: 60%; /* Full height (cover the whole page) */
+    top: 20%;
+    left: 20%;
+    right: 25%;
+    bottom: 25%;
+    background-color: white; /* Black background with opacity */
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    border-radius: 10px;
+    z-index: 2; /* Specify a stack order in case you're using a different order for other elements */
+    cursor: pointer; /* Add a pointer on hover */
+    
 }
+
+#demo{
+
+    padding-left: -50px;
+
+}
+

@@ -1,5 +1,6 @@
 
-var questions = ["Wofür hast du das letzte Mal unnötig Geld ausgegeben?",
+var questions = [
+    "Wofür hast du das letzte Mal unnötig Geld ausgegeben?",
     "Hast du dir schon mal was gebrochen?",
     "Deine letzte peinliche Situation?",
     "Dein letzter Kuss?",
@@ -21,7 +22,7 @@ var questions = ["Wofür hast du das letzte Mal unnötig Geld ausgegeben?",
     "Hast du schon mal einen Strafzettel bekommen?",
     "Was war dein schönster Urlaub?",
     "Wann hast du dich das letzte Mal so richtig erschrocken?",
-    "Wann hast du das letzte geduscht?",
+    "Wann hast du das letzte Mal geduscht?",
     "Was war heute deine letzte Mahlzeit und was?",
     "Wie viele Männer und Frauen hast du schon insgesamt geküsst?",
     "Würdest du dir ein Tattoo stechen lassen?",
@@ -36,5 +37,5 @@ function get_Question() {
 
     var randomNumber = Math.round(Math.random() * (1 - 29)) + 29;
 
-    document.getElementById("demo").innerHTML = questions[randomNumber];
+    document.getElementById("demo").innerHTML = questions[0];
 }
