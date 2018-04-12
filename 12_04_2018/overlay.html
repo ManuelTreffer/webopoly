@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>Webopoly</title>
+    <link rel="stylesheet" href="../css/bootstrap.min.css">
+    <link rel="stylesheet" href="../css/style.css">
+
+
+    <!--
+    Folgendes <style> ist für das Design der Fragen/...!
+    -->
+
+
+    <style>
+        #text{
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            font-size: 40px;
+            color: white;
+            transform: translate(-50%,-50%);
+            text-shadow: 5px 5px 5px black;
+            -ms-transform: translate(-50%,-50%);
+        }
+    </style>
+</head>
+
+<body>
+
+<div id="overlay" onclick="off()">
+    <div id="text">
+    <div id="text_questions">
+        <script type="text/javascript" src="questions_array.js"></script>
+
+
+    <br>
+    <p id="demo">
+        <h4>Bekommt der Spieler die Punkte?</h4>
+        <button id="points_yes_btn" onclick="addPoints();" class="btn punkte_ja btn-outline-light" value="0">JA</button>
+        <button id="points_no_btn" class="btn punkte_ja btn-danger">NEIN</button>
+
+    </p></div>
+    </div>
+</div>
+
+
+
+
+
+<div class="navbar">
+    <ul class="nav">
+        <li class="nav-item">
+            <a class="nav-link" href="../09_04_2018/spieleranzahl/spieleranzahl.html">New Game</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" href="../09_04_2018/endstand/endstand.html">Finish Game</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" href="http://www.youtube.com" target="_blank">Anleitung</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" href="#">Impressum</a>
+        </li>
+    </ul>
+</div>
+<div class="awesame_container">
+
+
+
+
+
+
+    <div class="left">
+
+        <div class="wuerfel_1">
+
+            <button onclick="myFunction()" class="btn btn-light">Würfeln</button>
+
+
+
+            <!-- Hier wird eine Random Zahl zwischen 1 und 6 generiert, die optisch als Würfel dargestellt wird.
+            Bei jedem erneuten Klick auf "Würfeln" wird eine neue Zahl generiert.
+           -->
+
+            <p id="randomNumber"></p>
+
+            <script>
+
+
+
+                function myFunction() {
+                    var randomNumber = Math.round(Math.random() * (1 - 6)) + 6;
+                    //document.getElementById("randomNumber").innerHTML = randomNumber;
+                    document.getElementById("wuerfel").src = randomNumber + ".png";
+                }
+            </script>
+            <img src="../09_04_2018/wuerfel/0.png" id="wuerfel" width="100px" >
+        </div>
+
+
+    </div>
+    <div class="middle">
+
+        <img src="../09_04_2018/spielfeld/spielfeld.png" alt="NUR EIN PLATZHALTER" class="spielfeld">
+    </div>
+    <div class="right">
+
+        <h1>Ranking</h1>
+        <table class="table">
+            <thead>
+            <tr>
+                <th scope="col">#</th>
+                <th scope="col">Emoji</th>
+                <th scope="col">Spielername</th>
+                <th scope="col">Punkte</th>
+            </tr>
+            </thead>
+            <tbody>
+            <tr>
+                <th scope="row">1</th>
+                <td><img src="../images/emojis/happy.png" width="22px"></td>
+                <td>Mark</td>
+                <td id="points">
+
+                    <script type="text/javascript" src="counter.js">
+
+
+                    </script>
+
+                </td>
+
+            </tr>
+            <tr>
+                <th scope="row">2</th>
+                <td><img src="../images/emojis/lachen.png" width="22px"></td>
+                <td>Jacob</td>
+                <td>Thornton</td>
+
+            </tr>
+            <tr>
+                <th scope="row">3</th>
+                <td><img src="../images/emojis/aeffchen.png" width="22px"></td>
+                <td>Larry</td>
+                <td>the Bird</td>
+
+            </tr>
+            <tr>
+                <th scope="row">4</th>
+                <td><img src="../images/emojis/brainfuck.png" width="22px"></td>
+                <td>Larry</td>
+                <td>the Bird</td>
+
+            </tr>
+            <tr>
+                <th scope="row">5</th>
+                <td><img src="../images/emojis/happy.png" width="22px"></td>
+                <td>Larry</td>
+                <td>the Bird</td>
+
+            </tr>
+            <tr>
+                <th scope="row">6</th>
+                <td><img src="../images/emojis/lachen.png" width="22px"></td>
+                <td>Larry</td>
+                <td>the Bird</td>
+
+            </tr>
+            <tr>
+                <th scope="row">7</th>
+                <td><img src="../images/emojis/aeffchen.png" width="22px"></td>
+                <td>Larry</td>
+                <td>the Bird</td>
+
+            </tr>
+            <tr>
+                <th scope="row">8</th>
+                <td><img src="../images/emojis/brainfuck.png" width="22px"></td>
+                <td>Larry</td>
+                <td>the Bird</td>
+
+            </tr>
+
+            </tbody>
+        </table>
+
+
+
+            <button onclick="on(); get_Question();" id="aufgabe" class="btn btn-light" >Zur Frage</button>
+
+<script>
+    function on() {
+        document.getElementById("overlay").style.display = "block";
+    }
+
+    function off() {
+    document.getElementById("overlay").style.display = "none";
+}</script>
+
+    </div>
+</div>
+
+
+<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+        integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+        crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+        integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+        crossorigin="anonymous"></script>
+<script src="../js/bootstrap.min.js"
+        integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+        crossorigin="anonymous"></script>
+</body>
+</html>
+
