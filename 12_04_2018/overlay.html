@@ -29,9 +29,13 @@
 
 <body>
 
-<div id="overlay" onclick="off()">
+<div id="overlay" >
     <div id="second_overlay">
     <div id="text">
+<p id="showCurrentPlayer">
+
+    <img src="1emoji.png" id="playerEmoji" width="40px" > ist an der Reihe!
+</p>
 
     <div id="text_questions">
         <script type="text/javascript" src="questions_array.js"></script>
@@ -40,8 +44,8 @@
     <br>
     <p id="demo">
         <h4>Aufgabe erledigt?</h4>
-        <button id="points_yes_btn" onclick="countScore();" class="btn punkte_ja btn-dark" value="0">JA</button>
-        <button id="points_no_btn" class="btn punkte_ja btn-danger">NEIN</button>
+        <button id="points_yes_btn" onclick="countScore(); off();" class="btn punkte_ja btn-dark" value="0">JA</button>
+        <button id="points_no_btn" onclick=" nextPlayer(); off();" class="btn punkte_nein btn-danger">NEIN</button>
 
     </p></div>
     </div>
@@ -99,7 +103,7 @@
                     document.getElementById("wuerfel").src = randomNumber + ".png";
                 }
             </script>
-            <img src="0.png" id="wuerfel" width="100px" >
+            <img src="1.png" id="wuerfel" width="100px" >
         </div>
 
 
@@ -123,62 +127,61 @@
             <tbody>
             <tr>
                 <th scope="row">1</th>
-                <td><img src="../images/emojis/happy.png" width="22px"></td>
+                <td><img src="../images/emojis/aeffchen.png" width="22px"></td>
                 <td>Mark</td>
-                <td>
+                <td id ="1">
 
-                    <p id="1"></p>
 
                 </td>
 
             </tr>
             <tr>
                 <th scope="row">2</th>
-                <td><img src="../images/emojis/lachen.png" width="22px"></td>
+                <td><img src="../images/emojis/brainfuck.png" width="22px"></td>
                 <td>Jacob</td>
-                <td><p id="2"></p></td>
+                <td id="2"></td>
 
             </tr>
             <tr>
                 <th scope="row">3</th>
-                <td><img src="../images/emojis/aeffchen.png" width="22px"></td>
+                <td><img src="../images/emojis/happy.png" width="22px"></td>
                 <td>Larry</td>
-                <td><p id="3"></p></td>
+                <td id="3"></td>
 
             </tr>
             <tr>
                 <th scope="row">4</th>
-                <td><img src="../images/emojis/brainfuck.png" width="22px"></td>
+                <td><img src="../images/emojis/lachen.png" width="22px"></td>
                 <td>Larry</td>
-                <td><p id="4"></p></td>
+                <td id="4"></td>
 
             </tr>
             <tr>
                 <th scope="row">5</th>
-                <td><img src="../images/emojis/happy.png" width="22px"></td>
+                <td><img src="../images/emojis/aeffchen.png" width="22px"></td>
                 <td>Larry</td>
-                <td><p id="5"></p></td>
+                <td id="5"></p></td>
 
             </tr>
             <tr>
                 <th scope="row">6</th>
-                <td><img src="../images/emojis/lachen.png" width="22px"></td>
+                <td><img src="../images/emojis/brainfuck.png" width="22px"></td>
                 <td>Larry</td>
-                <td><p id="6"></p></td>
+                <td id="6"></p></td>
 
             </tr>
             <tr>
                 <th scope="row">7</th>
-                <td><img src="../images/emojis/aeffchen.png" width="22px"></td>
+                <td><img src="../images/emojis/happy.png" width="22px"></td>
                 <td>Larry</td>
-                <td><p id="7"></p></td>
+                <td id="7"></td>
 
             </tr>
             <tr>
                 <th scope="row">8</th>
-                <td><img src="../images/emojis/brainfuck.png" width="22px"></td>
+                <td><img src="../images/emojis/lachen.png" width="22px"></td>
                 <td>Larry</td>
-                <td><p id="8"></p></td>
+                <td id="8"></td>
 
             </tr>
 
@@ -187,20 +190,23 @@
 
 
 
-            <button onclick="on(); get_Question();" id="aufgabe" class="btn btn-light" >Zur Frage</button>
+            <button onclick="on(); get_Question();highlightPlayer();" id="aufgabe" class="btn btn-light" >Zur Frage</button>
 
 <script>
     function on() {
         document.getElementById("overlay").style.display = "block";
     }
 
-    function off() {
-    document.getElementById("overlay").style.display = "none";
-}</script>
+   function off() {
+       document.getElementById("overlay").style.display = "none";
+   }
+</script>
 
     </div>
 </div>
 
+
+<script type="text/javascript" src="showCurrentPlayer.js"></script>
 <script type="text/javascript" src="counterNew.js"></script>
 <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
         integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
