@@ -40,7 +40,7 @@
     <br>
     <p id="demo">
         <h4>Aufgabe erledigt?</h4>
-        <button id="points_yes_btn" onclick="addPoints();" class="btn punkte_ja btn-dark" value="0">JA</button>
+        <button id="points_yes_btn" onclick="countScore();" class="btn punkte_ja btn-dark" value="0">JA</button>
         <button id="points_no_btn" class="btn punkte_ja btn-danger">NEIN</button>
 
     </p></div>
@@ -125,12 +125,9 @@
                 <th scope="row">1</th>
                 <td><img src="../images/emojis/happy.png" width="22px"></td>
                 <td>Mark</td>
-                <td id="points">
+                <td>
 
-                    <script type="text/javascript" src="counter.js">
-
-
-                    </script>
+                    <p id="1"></p>
 
                 </td>
 
@@ -139,49 +136,49 @@
                 <th scope="row">2</th>
                 <td><img src="../images/emojis/lachen.png" width="22px"></td>
                 <td>Jacob</td>
-                <td>Thornton</td>
+                <td><p id="2"></p></td>
 
             </tr>
             <tr>
                 <th scope="row">3</th>
                 <td><img src="../images/emojis/aeffchen.png" width="22px"></td>
                 <td>Larry</td>
-                <td>the Bird</td>
+                <td><p id="3"></p></td>
 
             </tr>
             <tr>
                 <th scope="row">4</th>
                 <td><img src="../images/emojis/brainfuck.png" width="22px"></td>
                 <td>Larry</td>
-                <td>the Bird</td>
+                <td><p id="4"></p></td>
 
             </tr>
             <tr>
                 <th scope="row">5</th>
                 <td><img src="../images/emojis/happy.png" width="22px"></td>
                 <td>Larry</td>
-                <td>the Bird</td>
+                <td><p id="5"></p></td>
 
             </tr>
             <tr>
                 <th scope="row">6</th>
                 <td><img src="../images/emojis/lachen.png" width="22px"></td>
                 <td>Larry</td>
-                <td>the Bird</td>
+                <td><p id="6"></p></td>
 
             </tr>
             <tr>
                 <th scope="row">7</th>
                 <td><img src="../images/emojis/aeffchen.png" width="22px"></td>
                 <td>Larry</td>
-                <td>the Bird</td>
+                <td><p id="7"></p></td>
 
             </tr>
             <tr>
                 <th scope="row">8</th>
                 <td><img src="../images/emojis/brainfuck.png" width="22px"></td>
                 <td>Larry</td>
-                <td>the Bird</td>
+                <td><p id="8"></p></td>
 
             </tr>
 
@@ -204,7 +201,7 @@
     </div>
 </div>
 
-
+<script type="text/javascript" src="counterNew.js"></script>
 <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
         integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
         crossorigin="anonymous"></script>

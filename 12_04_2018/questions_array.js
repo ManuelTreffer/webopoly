@@ -37,5 +37,5 @@ function get_Question() {
 
     var randomNumber = Math.round(Math.random() * (1 - 29)) + 29;
 
-    document.getElementById("demo").innerHTML = questions[0];
+    document.getElementById("demo").innerHTML = questions[randomNumber];
 }
