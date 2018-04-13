@@ -59,6 +59,7 @@
 <div class="navbar">
     <ul class="nav">
         <li class="nav-item">
+<<<<<<< HEAD
 
             <a class="nav-link" href="../spieleranzahl/spieleranzahl.php">New Game</a>
         </li>
@@ -66,6 +67,12 @@
 
             <a class="nav-link" href="../endstand/endstand.php" type="submit">Finish Game</a>
 
+=======
+            <a class="nav-link" href="../spieleranzahl/spieleranzahl.html">New Game</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" href="../endstand/endstand.html">Finish Game</a>
+>>>>>>> 3ba959df41a70966f0d61b5c209616bef8c45bcd
         </li>
         <li class="nav-item">
             <a class="nav-link" href="http://www.youtube.com" target="_blank">Anleitung</a>
@@ -130,18 +137,33 @@
             <tbody>
             <tr>
                 <th scope="row">1</th>
+<<<<<<< HEAD
                 <td><img src="1emoji.png" width="35px"></td>
+=======
+                <td><img src="../emojis/1emoji.png" width="22px"></td>
+>>>>>>> 3ba959df41a70966f0d61b5c209616bef8c45bcd
                 <td><?php
                     $spielername1 = $_GET["spielername1"];
                     echo $spielername1;
                     ?></td>
+<<<<<<< HEAD
 
                 <td id ="1" ></td>
+=======
+                <td id ="1">
+
+
+                </td>
+>>>>>>> 3ba959df41a70966f0d61b5c209616bef8c45bcd
 
             </tr>
             <tr>
                 <th scope="row">2</th>
+<<<<<<< HEAD
                 <td><img src="2emoji.png" width="35px"></td>
+=======
+                <td><img src="../emojis/2emoji.png" width="22px"></td>
+>>>>>>> 3ba959df41a70966f0d61b5c209616bef8c45bcd
                 <td><?php
                     $spielername2 = $_GET["spielername2"];
                     echo $spielername2;
@@ -151,7 +173,11 @@
             </tr>
             <tr>
                 <th scope="row">3</th>
+<<<<<<< HEAD
                 <td><img src="3emoji.png" width="35px"></td>
+=======
+                <td><img src="../emojis/3emoji.png" width="22px"></td>
+>>>>>>> 3ba959df41a70966f0d61b5c209616bef8c45bcd
                 <td><?php
                     $spielername3 = $_GET["spielername3"];
                     echo $spielername3;
@@ -161,7 +187,11 @@
             </tr>
             <tr>
                 <th scope="row">4</th>
+<<<<<<< HEAD
                 <td><img src="4emoji.png" width="35px"></td>
+=======
+                <td><img src="../emojis/4emoji.png" width="22px"></td>
+>>>>>>> 3ba959df41a70966f0d61b5c209616bef8c45bcd
                 <td><?php
                     $spielername4 = $_GET["spielername4"];
                     echo $spielername4;
@@ -171,7 +201,11 @@
             </tr>
             <tr>
                 <th scope="row">5</th>
+<<<<<<< HEAD
                 <td><img src="5emoji.png" width="35px"></td>
+=======
+                <td><img src="../emojis/5emoji.png" width="22px"></td>
+>>>>>>> 3ba959df41a70966f0d61b5c209616bef8c45bcd
                 <td><?php
                     $spielername5 = $_GET["spielername5"];
                     echo $spielername5;
@@ -181,7 +215,11 @@
             </tr>
             <tr>
                 <th scope="row">6</th>
+<<<<<<< HEAD
                 <td><img src="6emoji.png" width="35px"></td>
+=======
+                <td><img src="../emojis/6emoji.png" width="22px"></td>
+>>>>>>> 3ba959df41a70966f0d61b5c209616bef8c45bcd
                 <td><?php
                     $spielername6 = $_GET["spielername6"];
                     echo $spielername6;
@@ -191,7 +229,11 @@
             </tr>
             <tr>
                 <th scope="row">7</th>
+<<<<<<< HEAD
                 <td><img src="7emoji.png" width="35px"></td>
+=======
+                <td><img src="../emojis/7emoji.png" width="22px"></td>
+>>>>>>> 3ba959df41a70966f0d61b5c209616bef8c45bcd
                 <td><?php
                     $spielername7 = $_GET["spielername7"];
                     echo $spielername7;
@@ -201,7 +243,11 @@
             </tr>
             <tr>
                 <th scope="row">8</th>
+<<<<<<< HEAD
                 <td><img src="8emoji.png" width="35px"></td>
+=======
+                <td><img src="../emojis/8emoji.png" width="22px"></td>
+>>>>>>> 3ba959df41a70966f0d61b5c209616bef8c45bcd
                 <td><?php
                     $spielername8 = $_GET["spielername8"];
                     echo $spielername8;
