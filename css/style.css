@@ -147,8 +147,8 @@ h3 {
     margin-bottom: 0;
 }
 
-.awesame_container{
-
+.awesome_container{
+    height: 800px;
     display: flex;
 }
 
@@ -247,8 +247,61 @@ h3 {
     padding: 0;
     margin: 0;
 }
-/*
-.kasetn{
+
+
+.emojis_small
+{
+    width: 40px;
+}
+
+
+
+
+
+/*.spielbrettTabelle table, td, tr {
+    border: 1px solid black;
+    overflow: visible;
+}
+*/
+.spielbrettTabelle {
+    /*padding: 40px;*/
+    width: 100%;
+    height: 100%;
+    overflow: visible;
+
+}
+
+.spielbrettTabelle img {
+    width: 400px;
+    height: 300px;
+}
+
+.tableRow {
     height: 25%;
+    overflow: visible;
+}
+
+
+
+.zelle {
     width: 25%;
+    height: 25%;
+    overflow: visible;
+}
+
+
+.katActivity {
+    background-color: red;
+}
+
+.katAlkohol {
+    background-color: green;
+}
+
+.katFragen {
+    background-color: yellow;
+}
+
+.katUeberraschung {
+    background-color: blue;
 }
