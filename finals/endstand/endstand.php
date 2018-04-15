@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 <?php
 $db = mysqli_connect("localhost", "webopolyteam", "webopoly", "testdatenbank_webopoly");
 if(!$db)
@@ -7,8 +6,6 @@ if(!$db)
 }
 ?>
 
-=======
->>>>>>> 15e88eca22308dfa80d09ce1bf6a91f53ae1f8ee
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -34,14 +31,11 @@ if(!$db)
         <div class="ranking_endstand">
 
 
-<<<<<<< HEAD
             <?php
 
 
             ?>
 
-=======
->>>>>>> 15e88eca22308dfa80d09ce1bf6a91f53ae1f8ee
             <table class="table">
                 <thead>
                 <tr>
@@ -56,7 +50,6 @@ if(!$db)
                     <th scope="row">1</th>
                     <td><img src="../1emoji.png" width="32px"></td>
                     <td><?php
-<<<<<<< HEAD
                         $erg = $db->query("SELECT player FROM webopoly WHERE id='1'")
                         or die($db->error);
 
@@ -73,19 +66,12 @@ if(!$db)
                         echo $datensatz["points"];
 
                         ?></td>
-=======
-                        $spielername1 = $_GET["spielername1"];
-                        echo $spielername1;
-                        ?></td>
-                    <td>Otto</td>
->>>>>>> 15e88eca22308dfa80d09ce1bf6a91f53ae1f8ee
 
                 </tr>
                 <tr class="opacity tr2">
                     <th scope="row">2</th>
                     <td><img src="../2emoji.png" width="32px"></td>
                     <td><?php
-<<<<<<< HEAD
                         $erg = $db->query("SELECT player FROM webopoly WHERE id='2'")
                         or die($db->error);
 
@@ -103,19 +89,12 @@ if(!$db)
                         echo $datensatz["points"];
 
                         ?></td>
-=======
-                        $spielername2 = $_GET["spielername2"];
-                        echo $spielername2;
-                        ?></td>
-                    <td>Thornton</td>
->>>>>>> 15e88eca22308dfa80d09ce1bf6a91f53ae1f8ee
 
                 </tr>
                 <tr class="opacity tr3">
                     <th scope="row">3</th>
                     <td><img src="../3emoji.png" width="32px"></td>
                     <td><?php
-<<<<<<< HEAD
                         $erg = $db->query("SELECT player FROM webopoly WHERE id='3'")
                         or die($db->error);
 
@@ -129,19 +108,12 @@ if(!$db)
                         $datensatz = $erg->fetch_assoc();
 
                         echo $datensatz["points"];?></td>
-=======
-                        $spielername3 = $_GET["spielername3"];
-                        echo $spielername3;
-                        ?></td>
-                    <td>the Bird</td>
->>>>>>> 15e88eca22308dfa80d09ce1bf6a91f53ae1f8ee
 
                 </tr>
                 <tr class="opacity tr4">
                     <th scope="row">4</th>
                     <td><img src="../4emoji.png" width="32px"></td>
                     <td><?php
-<<<<<<< HEAD
                         $erg = $db->query("SELECT player FROM webopoly WHERE id='4'")
                         or die($db->error);
 
@@ -155,12 +127,6 @@ if(!$db)
                         $datensatz = $erg->fetch_assoc();
 
                         echo $datensatz["points"];?></td>
-=======
-                        $spielername4 = $_GET["spielername4"];
-                        echo $spielername4;
-                        ?></td>
-                    <td>the Bird</td>
->>>>>>> 15e88eca22308dfa80d09ce1bf6a91f53ae1f8ee
 
                 </tr>
 
@@ -171,7 +137,6 @@ if(!$db)
 
     </div>
     <br>
-<<<<<<< HEAD
     <a href="../spieleranzahl/spieleranzahl.php" class="btn"><button class="btn btn-danger" type="button">New Game<?php
 
             mysqli_query($db, 'TRUNCATE TABLE webopoly;');
@@ -179,9 +144,6 @@ if(!$db)
 
 
             ?></button></a>
-=======
-    <a href="../spieleranzahl/spieleranzahl.php" class="btn"><button class="btn btn-danger" type="button">New Game</button></a>
->>>>>>> 15e88eca22308dfa80d09ce1bf6a91f53ae1f8ee
 </div>
 
 

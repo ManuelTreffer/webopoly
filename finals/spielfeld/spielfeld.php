@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 <?php
 $db = mysqli_connect("localhost", "webopolyteam", "webopoly", "testdatenbank_webopoly");
 if(!$db)
@@ -8,8 +7,6 @@ if(!$db)
 ?>
 
 
-=======
->>>>>>> 15e88eca22308dfa80d09ce1bf6a91f53ae1f8ee
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -50,20 +47,10 @@ if(!$db)
             </p>
 
             <div id="text_questions">
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
->>>>>>> 15e88eca22308dfa80d09ce1bf6a91f53ae1f8ee
-                <script type="text/javascript" src="../js/alcohol_array.js"></script>
-
-
-
-<<<<<<< HEAD
-=======
-=======
                 <script type="text/javascript" src="../js/questions_array.js"></script>
->>>>>>> eb3ae556031dd3a3d43d42a0e628a0c382435e5d
->>>>>>> 15e88eca22308dfa80d09ce1bf6a91f53ae1f8ee
+
+
+
 
 
                 <br>
@@ -84,7 +71,6 @@ if(!$db)
 <div class="navbar">
     <ul class="nav">
         <li class="nav-item">
-<<<<<<< HEAD
 
             <!--<a class="nav-link" href="../spieleranzahl/spieleranzahl.php">New Game/*</a>-->
         </li>
@@ -92,28 +78,6 @@ if(!$db)
 
             <a class="nav-link" href="../endstand/endstand.php">Finish Game</a>
 
-=======
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
->>>>>>> eb3ae556031dd3a3d43d42a0e628a0c382435e5d
-
-            <a class="nav-link" href="../spieleranzahl/spieleranzahl.php">New Game</a>
-        </li>
-        <li class="nav-item">
-
-            <a class="nav-link" href="../endstand/endstand.php" type="submit">Finish Game</a>
-
-<<<<<<< HEAD
-=======
-=======
-            <a class="nav-link" href="../spieleranzahl/spieleranzahl.html">New Game</a>
-        </li>
-        <li class="nav-item">
-            <a class="nav-link" href="../endstand/endstand.html">Finish Game</a>
->>>>>>> 3ba959df41a70966f0d61b5c209616bef8c45bcd
->>>>>>> eb3ae556031dd3a3d43d42a0e628a0c382435e5d
->>>>>>> 15e88eca22308dfa80d09ce1bf6a91f53ae1f8ee
         </li>
         <li class="nav-item">
             <a class="nav-link" href="http://www.youtube.com" target="_blank">Anleitung</a>
@@ -123,11 +87,7 @@ if(!$db)
         </li>
     </ul>
 </div>
-<<<<<<< HEAD
 <div class="awesome_container">
-=======
-<div class="awesame_container">
->>>>>>> 15e88eca22308dfa80d09ce1bf6a91f53ae1f8ee
 
 
 
@@ -165,7 +125,6 @@ if(!$db)
     </div>
     <div class="middle">
 
-<<<<<<< HEAD
         <table class="spielbrettTabelle">
             <tr class="tableRow tableRow1">
                 <td class="zelle zelle4 katActivity">
@@ -219,17 +178,6 @@ if(!$db)
     <div class="right">
 
         <h1>Punktetabelle</h1>
-=======
-        <img src="../../09_04_2018/spielfeld/spielfeld.png" alt="NUR EIN PLATZHALTER" class="spielfeld">
-    </div>
-    <div class="right">
-
-<<<<<<< HEAD
-        <h1>Punktetabelle</h1>
-=======
-        <h1>Ranking</h1>
->>>>>>> eb3ae556031dd3a3d43d42a0e628a0c382435e5d
->>>>>>> 15e88eca22308dfa80d09ce1bf6a91f53ae1f8ee
         <table class="table">
             <thead>
             <tr>
@@ -242,59 +190,18 @@ if(!$db)
             <tbody>
             <tr>
                 <th scope="row">1</th>
-<<<<<<< HEAD
                 <td><img src="1emoji.png" width="35px"></td>
-=======
-<<<<<<< HEAD
-                <td><img src="1emoji.png" width="35px"></td>
-=======
-<<<<<<< HEAD
-                <td><img src="1emoji.png" width="35px"></td>
-=======
-                <td><img src="../emojis/1emoji.png" width="22px"></td>
->>>>>>> 3ba959df41a70966f0d61b5c209616bef8c45bcd
->>>>>>> eb3ae556031dd3a3d43d42a0e628a0c382435e5d
->>>>>>> 15e88eca22308dfa80d09ce1bf6a91f53ae1f8ee
                 <td><?php
                     $spielername1 = $_GET["spielername1"];
                     echo $spielername1;
                     ?></td>
-<<<<<<< HEAD
 
                 <td id ="1" ></td>
-=======
-<<<<<<< HEAD
-
-                <td id ="1" ></td>
-=======
-<<<<<<< HEAD
-
-                <td id ="1" ></td>
-=======
-                <td id ="1">
-
-
-                </td>
->>>>>>> 3ba959df41a70966f0d61b5c209616bef8c45bcd
->>>>>>> eb3ae556031dd3a3d43d42a0e628a0c382435e5d
->>>>>>> 15e88eca22308dfa80d09ce1bf6a91f53ae1f8ee
 
             </tr>
             <tr>
                 <th scope="row">2</th>
-<<<<<<< HEAD
                 <td><img src="2emoji.png" width="35px"></td>
-=======
-<<<<<<< HEAD
-                <td><img src="2emoji.png" width="35px"></td>
-=======
-<<<<<<< HEAD
-                <td><img src="2emoji.png" width="35px"></td>
-=======
-                <td><img src="../emojis/2emoji.png" width="22px"></td>
->>>>>>> 3ba959df41a70966f0d61b5c209616bef8c45bcd
->>>>>>> eb3ae556031dd3a3d43d42a0e628a0c382435e5d
->>>>>>> 15e88eca22308dfa80d09ce1bf6a91f53ae1f8ee
                 <td><?php
                     $spielername2 = $_GET["spielername2"];
                     echo $spielername2;
@@ -304,19 +211,7 @@ if(!$db)
             </tr>
             <tr>
                 <th scope="row">3</th>
-<<<<<<< HEAD
                 <td><img src="3emoji.png" width="35px"></td>
-=======
-<<<<<<< HEAD
-                <td><img src="3emoji.png" width="35px"></td>
-=======
-<<<<<<< HEAD
-                <td><img src="3emoji.png" width="35px"></td>
-=======
-                <td><img src="../emojis/3emoji.png" width="22px"></td>
->>>>>>> 3ba959df41a70966f0d61b5c209616bef8c45bcd
->>>>>>> eb3ae556031dd3a3d43d42a0e628a0c382435e5d
->>>>>>> 15e88eca22308dfa80d09ce1bf6a91f53ae1f8ee
                 <td><?php
                     $spielername3 = $_GET["spielername3"];
                     echo $spielername3;
@@ -326,19 +221,7 @@ if(!$db)
             </tr>
             <tr>
                 <th scope="row">4</th>
-<<<<<<< HEAD
                 <td><img src="4emoji.png" width="35px"></td>
-=======
-<<<<<<< HEAD
-                <td><img src="4emoji.png" width="35px"></td>
-=======
-<<<<<<< HEAD
-                <td><img src="4emoji.png" width="35px"></td>
-=======
-                <td><img src="../emojis/4emoji.png" width="22px"></td>
->>>>>>> 3ba959df41a70966f0d61b5c209616bef8c45bcd
->>>>>>> eb3ae556031dd3a3d43d42a0e628a0c382435e5d
->>>>>>> 15e88eca22308dfa80d09ce1bf6a91f53ae1f8ee
                 <td><?php
                     $spielername4 = $_GET["spielername4"];
                     echo $spielername4;
@@ -348,19 +231,7 @@ if(!$db)
             </tr>
             <tr>
                 <th scope="row">5</th>
-<<<<<<< HEAD
                 <td><img src="5emoji.png" width="35px"></td>
-=======
-<<<<<<< HEAD
-                <td><img src="5emoji.png" width="35px"></td>
-=======
-<<<<<<< HEAD
-                <td><img src="5emoji.png" width="35px"></td>
-=======
-                <td><img src="../emojis/5emoji.png" width="22px"></td>
->>>>>>> 3ba959df41a70966f0d61b5c209616bef8c45bcd
->>>>>>> eb3ae556031dd3a3d43d42a0e628a0c382435e5d
->>>>>>> 15e88eca22308dfa80d09ce1bf6a91f53ae1f8ee
                 <td><?php
                     $spielername5 = $_GET["spielername5"];
                     echo $spielername5;
@@ -370,19 +241,7 @@ if(!$db)
             </tr>
             <tr>
                 <th scope="row">6</th>
-<<<<<<< HEAD
                 <td><img src="6emoji.png" width="35px"></td>
-=======
-<<<<<<< HEAD
-                <td><img src="6emoji.png" width="35px"></td>
-=======
-<<<<<<< HEAD
-                <td><img src="6emoji.png" width="35px"></td>
-=======
-                <td><img src="../emojis/6emoji.png" width="22px"></td>
->>>>>>> 3ba959df41a70966f0d61b5c209616bef8c45bcd
->>>>>>> eb3ae556031dd3a3d43d42a0e628a0c382435e5d
->>>>>>> 15e88eca22308dfa80d09ce1bf6a91f53ae1f8ee
                 <td><?php
                     $spielername6 = $_GET["spielername6"];
                     echo $spielername6;
@@ -392,19 +251,7 @@ if(!$db)
             </tr>
             <tr>
                 <th scope="row">7</th>
-<<<<<<< HEAD
                 <td><img src="7emoji.png" width="35px"></td>
-=======
-<<<<<<< HEAD
-                <td><img src="7emoji.png" width="35px"></td>
-=======
-<<<<<<< HEAD
-                <td><img src="7emoji.png" width="35px"></td>
-=======
-                <td><img src="../emojis/7emoji.png" width="22px"></td>
->>>>>>> 3ba959df41a70966f0d61b5c209616bef8c45bcd
->>>>>>> eb3ae556031dd3a3d43d42a0e628a0c382435e5d
->>>>>>> 15e88eca22308dfa80d09ce1bf6a91f53ae1f8ee
                 <td><?php
                     $spielername7 = $_GET["spielername7"];
                     echo $spielername7;
@@ -414,19 +261,7 @@ if(!$db)
             </tr>
             <tr>
                 <th scope="row">8</th>
-<<<<<<< HEAD
                 <td><img src="8emoji.png" width="35px"></td>
-=======
-<<<<<<< HEAD
-                <td><img src="8emoji.png" width="35px"></td>
-=======
-<<<<<<< HEAD
-                <td><img src="8emoji.png" width="35px"></td>
-=======
-                <td><img src="../emojis/8emoji.png" width="22px"></td>
->>>>>>> 3ba959df41a70966f0d61b5c209616bef8c45bcd
->>>>>>> eb3ae556031dd3a3d43d42a0e628a0c382435e5d
->>>>>>> 15e88eca22308dfa80d09ce1bf6a91f53ae1f8ee
                 <td><?php
                     $spielername8 = $_GET["spielername8"];
                     echo $spielername8;
@@ -439,7 +274,6 @@ if(!$db)
         </table>
 
 
-<<<<<<< HEAD
         <?php
 
         $eintrag = "INSERT INTO webopoly (player) VALUES ('$spielername1'), ('$spielername2'), ('$spielername3'), ('$spielername4'), ('$spielername5'), ('$spielername6'), ('$spielername7'), ('$spielername8')";
@@ -449,15 +283,7 @@ if(!$db)
 
 
 
-        <button onclick="on(); get_Surprise(); highlightPlayer();" id="aufgabe" class="btn btn-light" >Zur Frage</button>
-=======
-
-<<<<<<< HEAD
-        <button onclick="on(); get_Alcohol(); highlightPlayer();" id="aufgabe" class="btn btn-light" >Zur Frage</button>
-=======
-        <button onclick="on(); get_Question();highlightPlayer();" id="aufgabe" class="btn btn-light" >Zur Frage</button>
->>>>>>> eb3ae556031dd3a3d43d42a0e628a0c382435e5d
->>>>>>> 15e88eca22308dfa80d09ce1bf6a91f53ae1f8ee
+        <button onclick="on(); get_Question(); highlightPlayer();" id="aufgabe" class="btn btn-light" >Zur Frage</button>
 
         <script>
             function on() {
