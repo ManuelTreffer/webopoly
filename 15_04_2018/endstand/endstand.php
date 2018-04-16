@@ -137,13 +137,9 @@ if(!$db)
 
     </div>
     <br>
-    <a href="../spieleranzahl/spieleranzahl.php" class="btn"><button class="btn btn-danger" type="button">New Game<?php
+    <a href="../spieleranzahl/spieleranzahl.php" class="btn"><button class="btn btn-danger" type="button">New Game
 
-            mysqli_query($db, 'TRUNCATE TABLE webopoly;');
-
-
-
-            ?></button></a>
+           </button></a>
 </div>
 
 

@@ -20,11 +20,11 @@
         <br>
         <h3>Spielernamen eingeben:</h3>
         <br>
-        <form action="../spielfeld/spielfeld.php" method="get">
+        <form action="../spielfeld/spielfeld.php" method="post">
 
             <?php
 
-            $spieleranzahl = $_GET["spieleranzahl"];
+            $spieleranzahl = $_POST["spieleranzahl"];
 
             switch ($spieleranzahl) {
                 case 1:

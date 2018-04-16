@@ -47,7 +47,7 @@ if(!$db)
             </p>
 
             <div id="text_questions">
-                <script type="text/javascript" src="../js/alcohol_array.js"></script>
+                <script type="text/javascript" src="../js/questions_array.js"></script>
 
 
 
@@ -90,7 +90,23 @@ if(!$db)
 <div class="awesome_container">
 
 
+    <?php
 
+    $spielername1 = $_POST["spielername1"];
+    $spielername2 = $_POST["spielername2"];
+    $spielername3 = $_POST["spielername3"];
+    $spielername4 = $_POST["spielername4"];
+    $spielername5 = $_POST["spielername5"];
+    $spielername6 = $_POST["spielername6"];
+    $spielername7 = $_POST["spielername7"];
+    $spielername8 = $_POST["spielername8"];
+
+
+
+    $eintrag = "INSERT INTO webopoly (player) VALUES ('$spielername1'), ('$spielername2'), ('$spielername3'), ('$spielername4'), ('$spielername5'), ('$spielername6'), ('$spielername7'), ('$spielername8')";
+    ?><?php
+    $eintragen = mysqli_query($db, $eintrag);
+    ?>
 
 
 
@@ -192,8 +208,12 @@ if(!$db)
                 <th scope="row">1</th>
                 <td><img src="1emoji.png" width="35px"></td>
                 <td><?php
-                    $spielername1 = $_GET["spielername1"];
-                    echo $spielername1;
+                    $erg = $db->query("SELECT player FROM webopoly WHERE id='1'")
+                    or die($db->error);
+
+                    $datensatz = $erg->fetch_assoc();
+                    echo $datensatz["player"];
+                    ;
                     ?></td>
 
                 <td id ="1" ></td>
@@ -203,8 +223,12 @@ if(!$db)
                 <th scope="row">2</th>
                 <td><img src="2emoji.png" width="35px"></td>
                 <td><?php
-                    $spielername2 = $_GET["spielername2"];
-                    echo $spielername2;
+                    $erg = $db->query("SELECT player FROM webopoly WHERE id='2'")
+                    or die($db->error);
+
+                    $datensatz = $erg->fetch_assoc();
+                    echo $datensatz["player"];
+                    ;
                     ?></td>
                 <td id="2"></td>
 
@@ -213,8 +237,12 @@ if(!$db)
                 <th scope="row">3</th>
                 <td><img src="3emoji.png" width="35px"></td>
                 <td><?php
-                    $spielername3 = $_GET["spielername3"];
-                    echo $spielername3;
+                    $erg = $db->query("SELECT player FROM webopoly WHERE id='3'")
+                    or die($db->error);
+
+                    $datensatz = $erg->fetch_assoc();
+                    echo $datensatz["player"];
+                    ;
                     ?></td>
                 <td id="3"></td>
 
@@ -223,8 +251,12 @@ if(!$db)
                 <th scope="row">4</th>
                 <td><img src="4emoji.png" width="35px"></td>
                 <td><?php
-                    $spielername4 = $_GET["spielername4"];
-                    echo $spielername4;
+                    $erg = $db->query("SELECT player FROM webopoly WHERE id='4'")
+                    or die($db->error);
+
+                    $datensatz = $erg->fetch_assoc();
+                    echo $datensatz["player"];
+                    ;
                     ?></td>
                 <td id="4"></td>
 
@@ -233,8 +265,12 @@ if(!$db)
                 <th scope="row">5</th>
                 <td><img src="5emoji.png" width="35px"></td>
                 <td><?php
-                    $spielername5 = $_GET["spielername5"];
-                    echo $spielername5;
+                    $erg = $db->query("SELECT player FROM webopoly WHERE id='5'")
+                    or die($db->error);
+
+                    $datensatz = $erg->fetch_assoc();
+                    echo $datensatz["player"];
+                    ;
                     ?></td>
                 <td id="5"></p></td>
 
@@ -243,8 +279,12 @@ if(!$db)
                 <th scope="row">6</th>
                 <td><img src="6emoji.png" width="35px"></td>
                 <td><?php
-                    $spielername6 = $_GET["spielername6"];
-                    echo $spielername6;
+                    $erg = $db->query("SELECT player FROM webopoly WHERE id='6'")
+                    or die($db->error);
+
+                    $datensatz = $erg->fetch_assoc();
+                    echo $datensatz["player"];
+                    ;
                     ?></td>
                 <td id="6"></p></td>
 
@@ -253,8 +293,12 @@ if(!$db)
                 <th scope="row">7</th>
                 <td><img src="7emoji.png" width="35px"></td>
                 <td><?php
-                    $spielername7 = $_GET["spielername7"];
-                    echo $spielername7;
+                    $erg = $db->query("SELECT player FROM webopoly WHERE id='7'")
+                    or die($db->error);
+
+                    $datensatz = $erg->fetch_assoc();
+                    echo $datensatz["player"];
+                    ;
                     ?></td>
                 <td id="7"></td>
 
@@ -263,8 +307,12 @@ if(!$db)
                 <th scope="row">8</th>
                 <td><img src="8emoji.png" width="35px"></td>
                 <td><?php
-                    $spielername8 = $_GET["spielername8"];
-                    echo $spielername8;
+                    $erg = $db->query("SELECT player FROM webopoly WHERE id='8'")
+                    or die($db->error);
+
+                    $datensatz = $erg->fetch_assoc();
+                    echo $datensatz["player"];
+                    ;
                     ?></td>
                 <td id="8"></td>
 
@@ -274,16 +322,11 @@ if(!$db)
         </table>
 
 
-        <?php
-
-        $eintrag = "INSERT INTO webopoly (player) VALUES ('$spielername1'), ('$spielername2'), ('$spielername3'), ('$spielername4'), ('$spielername5'), ('$spielername6'), ('$spielername7'), ('$spielername8')";
-        ?><?php
-        $eintragen = mysqli_query($db, $eintrag);
-        ?>
 
 
 
-        <button onclick="on(); get_Surprise(); highlightPlayer();" id="aufgabe" class="btn btn-light" >Zur Frage</button>
+
+        <button onclick="on(); get_Question(); highlightPlayer();" id="aufgabe" class="btn btn-light" >Zur Frage</button>
 
         <script>
             function on() {

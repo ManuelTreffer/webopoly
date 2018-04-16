@@ -1,3 +1,11 @@
+<?php
+$db = mysqli_connect("localhost", "webopolyteam", "webopoly", "testdatenbank_webopoly");
+if(!$db)
+{
+    exit("Verbindungsfehler: ".mysqli_connect_error());
+}
+?>
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -22,7 +30,7 @@
         <h3>Spieleranzahl wählen:</h3>
         <br>
         <div class="input-group">
-            <form action="../spielernamen/spielernamen.php">
+            <form action="../spielernamen/spielernamen.php" method="post">
 
 
 
@@ -47,7 +55,9 @@
 <div class="footer">
     <a class="nav-link" href="http://www.youtube.com" target="_blank">Ihr seid neu bei WEBopoly? Dann klickt hier für eine Anleitung! </a>
 
-
+    <?php
+    mysqli_query($db, "TRUNCATE TABLE webopoly");
+    ?>
 
 </div>
 
