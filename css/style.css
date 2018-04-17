@@ -1,6 +1,7 @@
 body {
     font-family: Arial;
-    background-color: lightgray;
+    background-image: url("../finals/background_2.jpg");
+    background-size: 100%;
     /*display: flex;*/
     color: white;
 }
@@ -173,14 +174,14 @@ h3 {
 }
 
 .tr2{
-    opacity: 0.75;
+    opacity: 0.8;
 }
 
 .tr3{
-    opacity: 0.5;
+    opacity: 0.6;
 }
 .tr4{
-    opacity: 0.25;
+    opacity: 0.4;
 }
 
 #overlay {
@@ -252,7 +253,7 @@ h3 {
 .emojis_small
 {
     width: 40px;
-<<<<<<< HEAD
+
 }
 
 
@@ -306,6 +307,9 @@ h3 {
 .katUeberraschung {
     background-color: blue;
 }
-=======
+
+.rot1{
+    transform:rotate(90deg);
+    height: 10px;
+    width: 10px;
 }
->>>>>>> 15e88eca22308dfa80d09ce1bf6a91f53ae1f8ee

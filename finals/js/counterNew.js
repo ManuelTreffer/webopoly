@@ -1,12 +1,12 @@
 var currentPlayer = 1;
-var qtyPlayers = 8;
+//var qtyPlayers = 8;
 var score = [0, 0, 0, 0, 0, 0, 0, 0];
 
 
 function countScore() {
     switch (currentPlayer) {
         case 1: score[0]++;
-                break;
+            break;
         case 2: score[1]++;
             break;
         case 3: score[2]++;
@@ -22,6 +22,22 @@ function countScore() {
         case 8: score[7]++;
             break;
     }
+
+    //TODO uebergeben von currentPlayer und score des players
+
+    $.ajax({
+        'url': '../saveScore.php',
+        'method': 'post',
+        'data': {'score': score[currentPlayer-1], 'userid': currentPlayer},
+        'success': function(receivedData) {
+            //im erfolgsfall
+            if(receivedData.result) {
+                console.log('hat geklappt');
+            } else {
+                console.log('hat nicht geklappt');
+            }
+        }
+    });
 
     document.getElementById(currentPlayer.toString()).innerHTML = score[currentPlayer-1].toString();
 

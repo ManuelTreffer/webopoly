@@ -1,11 +1,30 @@
 <?php
+
+session_start();
+
 $db = mysqli_connect("localhost", "webopolyteam", "webopoly", "testdatenbank_webopoly");
 if(!$db)
 {
     exit("Verbindungsfehler: ".mysqli_connect_error());
 }
-?>
 
+$sql = "SELECT * FROM webopoly ORDER BY points DESC, player ASC LIMIT 0, 4";
+$result = mysqli_query($db, $sql);
+
+$playerboard = array();
+
+
+if($result)
+{
+    while($row = mysqli_fetch_array($result))
+    {
+        $playerboard[] = (object) $row;
+    }
+}
+
+$spieleranzahl = $_SESSION['spieleranzahl'];
+
+?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -46,89 +65,18 @@ if(!$db)
                 </tr>
                 </thead>
                 <tbody>
-                <tr>
-                    <th scope="row">1</th>
-                    <td><img src="../1emoji.png" width="32px"></td>
-                    <td><?php
-                        $erg = $db->query("SELECT player FROM webopoly WHERE id='1'")
-                        or die($db->error);
 
-                        $datensatz = $erg->fetch_assoc();
-                        echo $datensatz["player"];
-                        ;
-                        ?></td>
-                    <td><?php
-                        $erg = $db->query("SELECT points FROM webopoly WHERE id='1'")
-                        or die($db->error);
+                <?php foreach($playerboard as $key => $playerObj): ?>
+                    <tr <?php if($key > 0): ?>class="opacity tr<?php echo ($key+1); ?>"<?php endif; ?>>
+                        <th scope="row"><?php echo $key+1?></th>
+                        <td><img src="../<?php echo $playerObj->id; ?>emoji.png" width="32px"></td>
+                        <td><?php echo $playerObj->player; ?></td>
+                        <td><?php echo $playerObj->points; ?></td>
 
-                        $datensatz = $erg->fetch_assoc();
+                    </tr>
+                <?php endforeach; ?>
 
-                        echo $datensatz["points"];
 
-                        ?></td>
-
-                </tr>
-                <tr class="opacity tr2">
-                    <th scope="row">2</th>
-                    <td><img src="../2emoji.png" width="32px"></td>
-                    <td><?php
-                        $erg = $db->query("SELECT player FROM webopoly WHERE id='2'")
-                        or die($db->error);
-
-                        $datensatz = $erg->fetch_assoc();
-
-                        echo $datensatz["player"];
-
-                        ?></td>
-                    <td><?php
-                        $erg = $db->query("SELECT points FROM webopoly WHERE id='2'")
-                        or die($db->error);
-
-                        $datensatz = $erg->fetch_assoc();
-
-                        echo $datensatz["points"];
-
-                        ?></td>
-
-                </tr>
-                <tr class="opacity tr3">
-                    <th scope="row">3</th>
-                    <td><img src="../3emoji.png" width="32px"></td>
-                    <td><?php
-                        $erg = $db->query("SELECT player FROM webopoly WHERE id='3'")
-                        or die($db->error);
-
-                        $datensatz = $erg->fetch_assoc();
-
-                        echo $datensatz["player"];
-                        ?></td>
-                    <td><?php $erg= $db->query("SELECT points FROM webopoly WHERE id='3'")
-                        or die($db->error);
-
-                        $datensatz = $erg->fetch_assoc();
-
-                        echo $datensatz["points"];?></td>
-
-                </tr>
-                <tr class="opacity tr4">
-                    <th scope="row">4</th>
-                    <td><img src="../4emoji.png" width="32px"></td>
-                    <td><?php
-                        $erg = $db->query("SELECT player FROM webopoly WHERE id='4'")
-                        or die($db->error);
-
-                        $datensatz = $erg->fetch_assoc();
-
-                        echo $datensatz["player"];
-                        ?></td>
-                    <td><?php $erg= $db->query("SELECT points FROM webopoly WHERE id='5'")
-                        or die($db->error);
-
-                        $datensatz = $erg->fetch_assoc();
-
-                        echo $datensatz["points"];?></td>
-
-                </tr>
 
 
                 </tbody>
@@ -137,7 +85,9 @@ if(!$db)
 
     </div>
     <br>
-    <a href="../spieleranzahl/spieleranzahl.php" class="btn"><button class="btn btn-danger" type="button">New Game</button></a>
+    <a href="../spieleranzahl/spieleranzahl.php" class="btn"><button class="btn btn-danger" type="button">New Game
+
+        </button></a>
 </div>
 
 

@@ -1,3 +1,5 @@
+//surprise felder werden im fertigen spiel offiziell nicht mehr verwendet!
+
 var surprise = [
     "5 Punkte mehr",
     "3 Felder vor",

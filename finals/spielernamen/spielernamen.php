@@ -1,4 +1,14 @@
-<!DOCTYPE html>
+<?php
+
+session_start();
+
+
+if(isset($_POST['spieleranzahl']))
+{
+    $_SESSION['spieleranzahl'] = $_POST["spieleranzahl"];
+}
+
+?><!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">

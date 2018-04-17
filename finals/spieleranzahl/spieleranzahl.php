@@ -51,6 +51,8 @@ if(!$db)
                 <input type="submit" value="Weiter" class="btn btn-danger"></input>
 
             </form>
+
+            <img src="../welcometowebopoly.gif" width="168px" height="63px"> <img src="../Emoji1Jump.gif" height="300px">
         </div></div></div>
 <div class="footer">
     <a class="nav-link" href="http://www.youtube.com" target="_blank">Ihr seid neu bei WEBopoly? Dann klickt hier für eine Anleitung! </a>
