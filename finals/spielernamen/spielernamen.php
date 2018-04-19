@@ -38,7 +38,7 @@ if(isset($_POST['spieleranzahl']))
 
             switch ($spieleranzahl) {
                 case 1:
-                    echo '<div class="input-group input-group-sm mb-3">
+                    echo '<div class="input-group input-group-sm mb-3 a">
             <div class="input-group-prepend">
                 <span class="input-group-text" id="inputGroup-sizing-sm"><img src="../1emoji.png" width="30px"> </span>
             </div>

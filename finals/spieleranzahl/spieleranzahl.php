@@ -27,33 +27,23 @@ if(!$db)
     <div class="spieleranzahl">
 
         <br>
-        <h3>Spieleranzahl wählen:</h3>
+        <h3>Spieleranzahl eingeben:</h3>
         <br>
-        <div class="input-group">
+        <div class="input-group mb-3 a">
             <form action="../spielernamen/spielernamen.php" method="post">
 
-
-
                 <input type="number" name="spieleranzahl">
-                <!--<option value="1" name="spieleranzahl1">1</option>
-                <option value="2" name="spieleranzahl2">2</option>
-                <option value="3" name="spieleranzahl3">3</option>
-                <option value="4" name="spieleranzahl4">4</option>
-                <option value="5" name="spieleranzahl5">5</option>
-                <option value="6" name="spieleranzahl6">6</option>
-                <option value="7" name="spieleranzahl7">7</option>
-                <option value="8" name="spieleranzahl8">8</option>-->
-
-
-
-
-                <br>
-                <input type="submit" value="Weiter" class="btn btn-danger"></input>
+                <input type="submit" value="Weiter" class="btn btn-danger btn_spieleranzahl">
 
             </form>
 
-            <img src="../welcometowebopoly.gif" width="168px" height="63px"> <img src="../Emoji1Jump.gif" height="300px">
-        </div></div></div>
+            <br><br>
+            <h6>Bitte gib einen Wert zwischen 1 und 8 ein!</h6>
+
+
+        </div>
+    </div></div>
+
 <div class="footer">
     <a class="nav-link" href="http://www.youtube.com" target="_blank">Ihr seid neu bei WEBopoly? Dann klickt hier für eine Anleitung! </a>
 

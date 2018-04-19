@@ -11,6 +11,8 @@ if(!$db)
 
 $spieleranzahl = $_SESSION['spieleranzahl'];
 
+echo '<script>var s = '.json_encode($_SESSION['spieleranzahl']).';</script>';
+
 ?>
 
 
@@ -49,8 +51,10 @@ $spieleranzahl = $_SESSION['spieleranzahl'];
     <div id="second_overlay">
         <div id="text">
             <p id="showCurrentPlayer">
+                
+           <img src="1emoji.png" id="playerEmoji" width="40px" > ist an der Reihe!
 
-                <img src="1emoji.png" id="playerEmoji" width="40px" > ist an der Reihe!
+
             </p>
 
             <div id="text_questions">

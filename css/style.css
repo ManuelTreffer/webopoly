@@ -313,3 +313,12 @@ h3 {
     height: 10px;
     width: 10px;
 }
+
+.mb-3 {
+    align-items: center;
+    justify-content: center;
+
+    margin: auto;
+}
+
+
