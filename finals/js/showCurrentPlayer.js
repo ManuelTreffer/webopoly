@@ -1,4 +1,4 @@
-var j = 1;
+var j = 8;
 function highlightPlayer() {
 
 

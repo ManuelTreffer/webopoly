@@ -2,11 +2,7 @@
 
 session_start();
 
-$db = mysqli_connect("localhost", "webopolyteam", "webopoly", "testdatenbank_webopoly");
-if(!$db)
-{
-    exit("Verbindungsfehler: ".mysqli_connect_error());
-}
+require("../phpfiles/database_connection.php");
 
 $sql = "SELECT * FROM webopoly ORDER BY points DESC, player ASC LIMIT 0, 4";
 $result = mysqli_query($db, $sql);

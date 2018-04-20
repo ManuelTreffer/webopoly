@@ -2,11 +2,7 @@
 
 session_start();
 
-$db = mysqli_connect("localhost", "webopolyteam", "webopoly", "testdatenbank_webopoly");
-if(!$db)
-{
-    exit("Verbindungsfehler: ".mysqli_connect_error());
-}
+require("../phpfiles/database_connection.php");
 
 
 $spieleranzahl = $_SESSION['spieleranzahl'];
@@ -54,7 +50,23 @@ echo '<script>var s = '.json_encode($_SESSION['spieleranzahl']).';</script>';
                 
            <img src="1emoji.png" id="playerEmoji" width="40px" > ist an der Reihe!
 
+<script>var jmax = <?php echo $spieleranzahl?>;
+var j=1;
+    function highlightPlayer() {
 
+
+        document.getElementById("playerEmoji").src = j+ "emoji.png";
+        j++;
+
+        if (j == jmax+1) {
+            j = 1;
+        }
+
+
+
+    }
+
+</script>
             </p>
 
             <div id="text_questions">
@@ -260,7 +272,7 @@ echo '<script>var s = '.json_encode($_SESSION['spieleranzahl']).';</script>';
 <script type="text/javascript">
     var qtyPlayers = <?php echo $spieleranzahl; ?>;
 </script>
-<script type="text/javascript" src="../js/showCurrentPlayer.js"></script>
+<!--<script type="text/javascript" src="../js/showCurrentPlayer.js"></script>-->
 <script type="text/javascript" src="../js/counterNew.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
