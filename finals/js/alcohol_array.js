@@ -19,7 +19,8 @@ var alcohol = [
 function get_Alcohol() {
 
 
-    var randomNumber = Math.round(Math.random() * (1 - 12)) + 12;
+    var zufallszahl = Math.round(Math.random() * ((questions.length-1) - 0)) + 0;
 
-    document.getElementById("demo").innerHTML = alcohol[randomNumber];
+    document.getElementById("demo").innerHTML = questions[zufallszahl];
+    console.log(zufallszahl);
 }

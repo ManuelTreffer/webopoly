@@ -30,7 +30,8 @@ var surprise = [
 function get_Surprise() {
 
 
-    var randomNumber = Math.round(Math.random() * (1 - 21)) + 21;
+    var zufallszahl = Math.round(Math.random() * ((questions.length-1) - 0)) + 0;
 
-    document.getElementById("demo").innerHTML = surprise[randomNumber];
+    document.getElementById("demo").innerHTML = questions[zufallszahl];
+    console.log(zufallszahl);
 }

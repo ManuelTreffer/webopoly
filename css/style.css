@@ -1,7 +1,7 @@
 body {
     font-family: Arial;
-    background-image: url("../finals/background_2.jpg");
-    background-size: 100%;
+
+
     /*display: flex;*/
     color: white;
 }
@@ -321,4 +321,7 @@ h3 {
     margin: auto;
 }
 
-
+.zelle img{
+    width: 25px;
+    height: 25px;
+}

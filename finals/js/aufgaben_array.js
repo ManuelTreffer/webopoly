@@ -23,7 +23,8 @@ var aufgabe = [
 function get_Aufgabe() {
 
 
-    var randomNumber = Math.round(Math.random() * (1 - 13)) + 13;
+    var zufallszahl = Math.round(Math.random() * ((questions.length-1) - 0)) + 0;
 
-    document.getElementById("demo").innerHTML = aufgabe[randomNumber];
+    document.getElementById("demo").innerHTML = questions[zufallszahl];
+    console.log(zufallszahl);
 }

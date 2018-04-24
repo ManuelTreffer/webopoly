@@ -20,7 +20,9 @@ var questions = [
 function get_Question() {
 
 
-    var randomNumber = Math.round(Math.random() * (1 - 15)) + 15;
+    var zufallszahl = Math.round(Math.random() * ((questions.length-1) - 0)) + 0;
 
-    document.getElementById("demo").innerHTML = questions[randomNumber];
+    document.getElementById("demo").innerHTML = questions[zufallszahl];
+    console.log(zufallszahl);
 }
+

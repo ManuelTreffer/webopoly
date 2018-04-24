@@ -18,6 +18,7 @@ echo '<script>var s = '.json_encode($_SESSION['spieleranzahl']).';</script>';
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <title>Webopoly</title>
+    <link rel="stylesheet" href="../../css/background.css">
     <link rel="stylesheet" href="../../css/bootstrap.min.css">
     <link rel="stylesheet" href="../../css/style.css">
 
@@ -115,19 +116,82 @@ var j=1;
 
     <?php
 
-    $spielername1 = $_POST["spielername1"];
+   /* $spielername1 = $_POST["spielername1"];
     $spielername2 = $_POST["spielername2"];
     $spielername3 = $_POST["spielername3"];
     $spielername4 = $_POST["spielername4"];
     $spielername5 = $_POST["spielername5"];
     $spielername6 = $_POST["spielername6"];
     $spielername7 = $_POST["spielername7"];
-    $spielername8 = $_POST["spielername8"];
+    $spielername8 = $_POST["spielername8"];*/
+
+
+switch ($spieleranzahl){
+    case 1:
+        $spielername1 = $_POST["spielername1"];
+        $eintrag = "INSERT INTO webopoly (player) VALUES ('$spielername1')";
+        break;
+
+    case 2:
+        $spielername1 = $_POST["spielername1"];
+        $spielername2 = $_POST["spielername2"];
+        $eintrag = "INSERT INTO webopoly (player) VALUES ('$spielername1'), ('$spielername2')";
+        break;
+    case 3:
+        $spielername1 = $_POST["spielername1"];
+        $spielername2 = $_POST["spielername2"];
+        $spielername3 = $_POST["spielername3"];
+        $eintrag = "INSERT INTO webopoly (player) VALUES ('$spielername1'), ('$spielername2'), ('$spielername3')";
+        break;
+    case 4:
+        $spielername1 = $_POST["spielername1"];
+        $spielername2 = $_POST["spielername2"];
+        $spielername3 = $_POST["spielername3"];
+        $spielername4 = $_POST["spielername4"];
+        $eintrag = "INSERT INTO webopoly (player) VALUES ('$spielername1'), ('$spielername2'), ('$spielername3'), ('$spielername4')";
+        break;
+    case 5:
+        $spielername1 = $_POST["spielername1"];
+        $spielername2 = $_POST["spielername2"];
+        $spielername3 = $_POST["spielername3"];
+        $spielername4 = $_POST["spielername4"];
+        $spielername5 = $_POST["spielername5"];
+        $eintrag = "INSERT INTO webopoly (player) VALUES ('$spielername1'), ('$spielername2'), ('$spielername3'), ('$spielername4'), ('$spielername5')";
+        break;
+    case 6:
+        $spielername1 = $_POST["spielername1"];
+        $spielername2 = $_POST["spielername2"];
+        $spielername3 = $_POST["spielername3"];
+        $spielername4 = $_POST["spielername4"];
+        $spielername5 = $_POST["spielername5"];
+        $spielername6 = $_POST["spielername6"];
+        $eintrag = "INSERT INTO webopoly (player) VALUES ('$spielername1'), ('$spielername2'), ('$spielername3'), ('$spielername4'), ('$spielername5'), ('$spielername6')";
+        break;
+    case 7:
+        $spielername1 = $_POST["spielername1"];
+        $spielername2 = $_POST["spielername2"];
+        $spielername3 = $_POST["spielername3"];
+        $spielername4 = $_POST["spielername4"];
+        $spielername5 = $_POST["spielername5"];
+        $spielername6 = $_POST["spielername6"];
+        $spielername7 = $_POST["spielername7"];
+        $eintrag = "INSERT INTO webopoly (player) VALUES ('$spielername1'), ('$spielername2'), ('$spielername3'), ('$spielername4'), ('$spielername5'), ('$spielername6'), ('$spielername7')";
+        break;
+    case 8:
+        $spielername1 = $_POST["spielername1"];
+        $spielername2 = $_POST["spielername2"];
+        $spielername3 = $_POST["spielername3"];
+        $spielername4 = $_POST["spielername4"];
+        $spielername5 = $_POST["spielername5"];
+        $spielername6 = $_POST["spielername6"];
+        $spielername7 = $_POST["spielername7"];
+        $spielername8 = $_POST["spielername8"];
+        $eintrag = "INSERT INTO webopoly (player) VALUES ('$spielername1'), ('$spielername2'), ('$spielername3'), ('$spielername4'), ('$spielername5'), ('$spielername6'), ('$spielername7'), ('$spielername8')";
+}
 
 
 
-    $eintrag = "INSERT INTO webopoly (player) VALUES ('$spielername1'), ('$spielername2'), ('$spielername3'), ('$spielername4'), ('$spielername5'), ('$spielername6'), ('$spielername7'), ('$spielername8')";
-    ?><?php
+
     $eintragen = mysqli_query($db, $eintrag);
     ?>
 
@@ -137,7 +201,7 @@ var j=1;
 
         <div class="wuerfel_1">
 
-            <button onclick="myFunction()" class="btn btn-light">Würfeln</button>
+            <button onclick="myFunction(); movePlayer()" class="btn btn-light">Würfeln</button>
 
 
 
@@ -150,11 +214,105 @@ var j=1;
             <script>
 
 
-
+                var randomNumber;
                 function myFunction() {
-                    var randomNumber = Math.round(Math.random() * (1 - 6)) + 6;
+                     randomNumber = Math.round(Math.random() * (1 - 6)) + 6;
                     //document.getElementById("randomNumber").innerHTML = randomNumber;
                     document.getElementById("wuerfel").src = "../" + randomNumber + ".png";
+
+
+
+
+
+                    }
+                var zugSpieler = 1;
+                var playerPosition = [1, 1, 1, 1, 1, 1, 1, 1];
+
+                    function movePlayer(){
+
+                        switch (zugSpieler){
+                            case 1: if((playerPosition[zugSpieler-1]+randomNumber)>12){
+
+                                playerPosition[zugSpieler-1]=playerPosition[zugSpieler-1]+randomNumber-12;
+                            } else {
+                                playerPosition[zugSpieler-1]+=randomNumber;
+                            }
+                                document.getElementById("zelle"+playerPosition[zugSpieler-1]).appendChild(document.getElementById('player' + zugSpieler)).innerHTML;
+
+                                zugSpieler++;
+                                break;
+                            case 2: if((playerPosition[zugSpieler-1]+randomNumber)>12){
+
+                                playerPosition[zugSpieler-1]=playerPosition[zugSpieler-1]+randomNumber-12;
+                            } else {
+                                playerPosition[zugSpieler-1]+=randomNumber;
+                            }
+                                document.getElementById("zelle"+playerPosition[zugSpieler-1]).appendChild(document.getElementById('player' + zugSpieler)).innerHTML;
+
+                                zugSpieler++;
+                                break;
+                            case 3: if((playerPosition[zugSpieler-1]+randomNumber)>12){
+
+                                playerPosition[zugSpieler-1]=playerPosition[zugSpieler-1]+randomNumber-12;
+                            } else {
+                                playerPosition[zugSpieler-1]+=randomNumber;
+                            }
+                                document.getElementById("zelle"+playerPosition[zugSpieler-1]).appendChild(document.getElementById('player' + zugSpieler)).innerHTML;
+
+                                zugSpieler++;
+                                break;
+                            case 4: if((playerPosition[zugSpieler-1]+randomNumber)>12){
+
+                                playerPosition[zugSpieler-1]=playerPosition[zugSpieler-1]+randomNumber-12;
+                            } else {
+                                playerPosition[zugSpieler-1]+=randomNumber;
+                            }
+                                document.getElementById("zelle"+playerPosition[zugSpieler-1]).appendChild(document.getElementById('player' + zugSpieler)).innerHTML;
+
+                                zugSpieler++;
+                                break;
+                            case 5: if((playerPosition[zugSpieler-1]+randomNumber)>12){
+
+                                playerPosition[zugSpieler-1]=playerPosition[zugSpieler-1]+randomNumber-12;
+                            } else {
+                                playerPosition[zugSpieler-1]+=randomNumber;
+                            }
+                                document.getElementById("zelle"+playerPosition[zugSpieler-1]).appendChild(document.getElementById('player' + zugSpieler)).innerHTML;
+
+                                zugSpieler++;
+                                break;
+                            case 6: if((playerPosition[zugSpieler-1]+randomNumber)>12){
+
+                                playerPosition[zugSpieler-1]=playerPosition[zugSpieler-1]+randomNumber-12;
+                            } else {
+                                playerPosition[zugSpieler-1]+=randomNumber;
+                            }
+                                document.getElementById("zelle"+playerPosition[zugSpieler-1]).appendChild(document.getElementById('player' + zugSpieler)).innerHTML;
+
+                                zugSpieler++;
+                                break;
+                            case 7: if((playerPosition[zugSpieler-1]+randomNumber)>12){
+
+                                playerPosition[zugSpieler-1]=playerPosition[zugSpieler-1]+randomNumber-12;
+                            } else {
+                                playerPosition[zugSpieler-1]+=randomNumber;
+                            }
+                                document.getElementById("zelle"+playerPosition[zugSpieler-1]).appendChild(document.getElementById('player' + zugSpieler)).innerHTML;
+
+                                zugSpieler++;
+                                break;
+                            case 8: if((playerPosition[zugSpieler-1]+randomNumber)>12){
+
+                                playerPosition[zugSpieler-1]=playerPosition[zugSpieler-1]+randomNumber-12;
+                            } else {
+                                playerPosition[zugSpieler-1]+=randomNumber;
+                            }
+                                document.getElementById("zelle"+playerPosition[zugSpieler-1]).appendChild(document.getElementById('player' + zugSpieler)).innerHTML;
+
+                                zugSpieler=1;
+                                break;
+                        }
+
                 }
             </script>
             <img src="1.png" id="wuerfel" width="100px" >
@@ -166,49 +324,57 @@ var j=1;
 
         <table class="spielbrettTabelle">
             <tr class="tableRow tableRow1">
-                <td class="zelle zelle4 katActivity">
+                <td class="zelle zelle4 katActivity" id="zelle4">
+                    <p id="4"></p>
+                </td>
+                <td class="zelle zelle5 katAlkohol" id="zelle5">
 
                 </td>
-                <td class="zelle zelle5 katAlkohol">
+                <td class="zelle zelle6 katFragen" id="zelle6">
 
                 </td>
-                <td class="zelle zelle6 katFragen">
-
-                </td>
-                <td class="zelle zelle7 katUeberraschung">
+                <td class="zelle zelle7 katUeberraschung" id="zelle7">
 
                 </td>
             </tr>
             <tr class="tableRow tableRow2">
-                <td class="zelle zelle3 katUeberraschung">
+                <td class="zelle zelle3 katUeberraschung" id="zelle3">
 
                 </td>
-                <td class="zelle zelleCenter" rowspan="2" colspan="2">
+                <td class="zelleCenter" rowspan="2" colspan="2">
                     <img src="../logo_webopoly_zugeschnitten.png" alt="WEBopoly">
                 </td>
-                <td class="zelle zelle8 katActivity">
+                <td class="zelle zelle8 katActivity" id="zelle8">
 
                 </td>
             </tr>
             <tr class="tableRow tableRow3">
-                <td class="zelle zelle2 katFragen">
+                <td class="zelle zelle2 katFragen" id="zelle2">
 
                 </td>
-                <td class="zelle zelle9 katAlkohol">
+                <td class="zelle zelle9 katAlkohol" id="zelle9">
 
                 </td>
             </tr>
             <tr class="tableRow tableRow4">
-                <td class="zelle zelle1 katAlkohol">
+                <td class="zelle zelle1 katAlkohol" id="zelle4">
+                    <img src="1emoji.png" id="player1">
+                    <img src="2emoji.png" id="player2">
+                    <img src="3emoji.png" id="player3">
+                    <img src="4emoji.png" id="player4">
+                    <img src="5emoji.png" id="player5">
+                    <img src="6emoji.png" id="player6">
+                    <img src="7emoji.png" id="player7">
+                    <img src="8emoji.png" id="player8">
 
                 </td>
-                <td class="zelle zelle12 katActivity">
+                <td class="zelle zelle12 katActivity" id="zelle12">
 
                 </td>
-                <td class="zelle zelle11 katUeberraschung">
+                <td class="zelle zelle11 katUeberraschung" id="zelle11">
 
                 </td>
-                <td class="zelle zelle10 katFragen">
+                <td class="zelle zelle10 katFragen" id="zelle10">
 
                 </td>
             </tr>

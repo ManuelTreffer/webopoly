@@ -39,6 +39,8 @@ function countScore() {
         }
     });
 
+
+
     document.getElementById(currentPlayer.toString()).innerHTML = score[currentPlayer-1].toString();
 
 
