@@ -285,10 +285,16 @@ h3 {
 
 
 
-.zelle {
+/*.zelle {
     width: 25%;
     height: 25%;
     overflow: visible;
+}*/
+
+.zelle {
+    display: block;
+    width: auto;
+    height: auto;
 }
 
 
@@ -324,4 +330,53 @@ h3 {
 .zelle img{
     width: 25px;
     height: 25px;
+}
+
+
+.zelle .spacer {
+    width:100%;
+    height:auto;
+}
+
+.zelle {
+    float:left;
+}
+
+.links, .rechts {
+    width:25%;
+    float:left;
+}
+
+.mitte {
+    width:50%;
+    float:left;
+}
+
+.links .zelle, .rechts .zelle {
+    width:100%;
+}
+
+
+.mitte img {
+    width:100%;
+    height: auto;
+}
+
+
+.zelle {
+    width:25%;
+    float:left;
+    position: relative;
+}
+
+.feld {
+    position: absolute;
+    left:0;
+    right:0;
+    bottom:0;
+    top:0;
+}
+
+img .playerFigure{
+    width: 60px;
 }
