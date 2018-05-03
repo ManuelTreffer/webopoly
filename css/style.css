@@ -380,3 +380,11 @@ h3 {
 img .playerFigure{
     width: 60px;
 }
+
+.impressum_text {
+    font-weight: bold;
+    align-items: center;
+    justify-content: center;
+
+    margin: auto;
+}

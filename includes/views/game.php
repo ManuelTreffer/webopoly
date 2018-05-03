@@ -93,17 +93,15 @@ $spieleranzahl = $this->spieleranzahl;
         </li>
         <li class="nav-item">
 
-            <a class="nav-link" href="endstand">Finish Game</a>
+            <a class="nav-link" href="endstand">Spiel beenden</a>
 
         </li>
         <li class="nav-item">
             <a class="nav-link" href="http://www.youtube.com" target="_blank">Anleitung</a>
         </li>
+
         <li class="nav-item">
-            <a class="nav-link" href="#">Impressum</a>
-        </li>
-        <li class="nav-item">
-            <a class="nav-link" href="logout">Ausloggen</a>
+            <a class="nav-link" href="logout">Logout</a>
         </li>
     </ul>
 </div>
@@ -239,7 +237,7 @@ $spieleranzahl = $this->spieleranzahl;
                     </div>
                 </div>
                 <div class="mitte">
-                    <img src="img/logo_webopoly_zugeschnitten.png" alt="WEBopoly">
+                    <img src="img/logo.png" alt="WEBopoly">
                 </div>
                 <div class="rechts">
                     <div class="zelle katActivity"><img src="img/td.png" class="spacer">

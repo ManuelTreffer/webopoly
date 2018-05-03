@@ -11,37 +11,44 @@
 
 </head>
 <body>
+
+<div class="navbar">
+    <ul class="nav">
+        <li class="nav-item">
+
+            <!--<a class="nav-link" href="../spieleranzahl/spieleranzahl.php">New Game/*</a>-->
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" href="index">Spiel starten</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" href="http://www.youtube.com" target="_blank">Anleitung</a>
+        </li>
+
+        <li class="nav-item">
+            <a class="nav-link" href="logout">Logout</a>
+        </li>
+    </ul>
+</div>
 <div class="inner">
     <div class="logo">
 
         <img src="img/logo.png" class="logo_image">
 
     </div>
-    <div class="spieleranzahl">
+    <div class="impressum_text mb-3">
 
+        <p>Hallo, danke, dass ihr unser Spiel gespielt habt! Für Fragen stehen wir gerne zur Verfügung bzw. haben ein cooles Video dazu gedreht!</p>
         <br>
-        <h3>Spieleranzahl eingeben:</h3>
+        <p>PS: Wusstet ihr schon, dass unser Spiel erst ab 18 Jahren ist? Wir fördern den aktiven Alkoholkonsum natürlich nicht!</p>
         <br>
-        <div class="input-group mb-3 a">
-            <form action="spielernamen" method="post">
+        <p>Und hier am Ende des Impressums noch ein AWESOME IMAGE:</p>
 
-                <input type="number" name="spieleranzahl">
-                <input type="submit" value="Weiter" class="btn btn-danger btn_spieleranzahl">
+        
 
-            </form>
+    </div>
+    <div class="image_jump mb-3"><img src="img/Emoji1Jump.gif" width="200px"></div></div>
 
-            <br><br>
-            <h6>Bitte gib einen Wert zwischen 1 und 8 ein!</h6>
-
-
-        </div>
-    </div></div>
-
-<div class="footer">
-
-    <a class="nav-link" href="http://www.youtube.com" target="_blank">Ihr seid neu bei WEBopoly? Dann klickt hier für eine Anleitung! </a>
-
-</div>
 
 <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
         integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"

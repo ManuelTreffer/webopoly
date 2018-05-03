@@ -1,4 +1,8 @@
+<?php
 
+$spieleranzahl = $this->spieleranzahl;
+
+?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -25,11 +29,6 @@
         <div class="ranking_endstand">
 
 
-            <?php
-
-
-            ?>
-
             <table class="table">
                 <thead>
                 <tr>
@@ -41,7 +40,7 @@
                 </thead>
                 <tbody>
 
-                <?php foreach($playerboard as $key => $playerObj): ?>
+               <?php foreach($playerboard as $key => $playerObj): ?>
                     <tr <?php if($key > 0): ?>class="opacity tr<?php echo ($key+1); ?>"<?php endif; ?>>
                         <th scope="row"><?php echo $key+1?></th>
                         <td><img src="../<?php echo $playerObj->id; ?>emoji.png" width="32px"></td>
@@ -50,8 +49,6 @@
 
                     </tr>
                 <?php endforeach; ?>
-
-
 
 
                 </tbody>
@@ -64,6 +61,15 @@
 
         </button></a>
 </div>
+
+<div class="footer">
+
+        <a class="nav-link" href="impressum">Impressum</a>
+
+
+
+</div>
+
 
 
 <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"

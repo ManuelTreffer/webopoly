@@ -32,7 +32,7 @@
 <header>
 	<div class="inner">
 		<div class="logo">
-			<div class="name">Webopoly</div>
+			<div class="name"><img src="img/logo.png" width="150px" ></div>
 
 		</div>
 
@@ -47,7 +47,7 @@
 							<span class="icon-bar"></span>
 							<span class="icon-bar"></span>
 						</button>
-						<a href="/" class="navbar-brand active">Adressverwaltung</a>
+						<a href="/" class="navbar-brand active">Webopoly</a>
 					</div>
 
 					<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
@@ -64,9 +64,9 @@
 			</nav>
 		<?php else: ?>
 			<nav class="mainnav">
-				<ul class="nav nav-pills">
-					<li<?php if($this->current == "login"): ?>class="active"<?php endif; ?>><a href="login">Login</a></li>
-				</ul>
+				<!--<ul class="nav nav-pills">
+					<li<?php //if($this->current == "login"): ?>class="active"<?php //endif; ?>><a href="login">Login</a></li>
+				</ul>-->
 			</nav>
 		<?php endif; ?>
 
