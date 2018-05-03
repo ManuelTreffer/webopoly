@@ -44,7 +44,7 @@
         <br>
         <p>Und hier am Ende des Impressums noch ein AWESOME IMAGE:</p>
 
-        
+
 
     </div>
     <div class="image_jump mb-3"><img src="img/Emoji1Jump.gif" width="200px"></div></div>

@@ -115,7 +115,9 @@ $spieleranzahl = $this->spieleranzahl;
 
         <div class="wuerfel_1">
 
-            <button onclick="myFunction(); movePlayer()" class="btn btn-light">Würfeln</button>
+            <?php for($i = 0; $i <=10; $i++){
+                echo "<br>";
+            }?><button onclick="myFunction(); movePlayer()" class="btn btn-light">Würfeln</button>
 
 
 
@@ -209,29 +211,29 @@ $spieleranzahl = $this->spieleranzahl;
 
         <div class="gameboard">
             <div class="reihe">
-                <div class="zelle katFragen"><img src="img/td.png" class="spacer">
+                <div class="zelle katFragen"><img src="img/truth.png" class="spacer">
                     <div class="feld" id="zelle4"></div>
                 </div>
-                <div class="zelle katActivity"><img src="img/td.png" class="spacer">
+                <div class="zelle katActivity"><img src="img/activity.png" class="spacer">
                     <div class="feld" id="zelle5"></div>
 
                 </div>
-                <div class="zelle katAlkohol"><img src="img/td.png" class="spacer">
+                <div class="zelle katAlkohol"><img src="img/drink.png" class="spacer">
                     <div class="feld" id="zelle6"></div>
 
                 </div>
-                <div class="zelle katFragen"><img src="img/td.png" class="spacer">
+                <div class="zelle katFragen"><img src="img/truth.png" class="spacer">
                     <div class="feld" id="zelle7"></div>
 
                 </div>
             </div>
             <div class="reihe">
                 <div class="links">
-                    <div class="zelle katAlkohol"><img src="img/td.png" class="spacer">
+                    <div class="zelle katAlkohol"><img src="img/drink.png" class="spacer">
                         <div class="feld" id="zelle3"></div>
 
                     </div>
-                    <div class="zelle katActivity"><img src="img/td.png" class="spacer">
+                    <div class="zelle katActivity"><img src="img/activity.png" class="spacer">
                         <div class="feld" id="zelle2"></div>
 
                     </div>
@@ -240,34 +242,34 @@ $spieleranzahl = $this->spieleranzahl;
                     <img src="img/logo.png" alt="WEBopoly">
                 </div>
                 <div class="rechts">
-                    <div class="zelle katActivity"><img src="img/td.png" class="spacer">
+                    <div class="zelle katActivity"><img src="img/activity.png" class="spacer">
                         <div class="feld" id="zelle8"></div>
 
                     </div>
-                    <div class="zelle katAlkohol"><img src="img/td.png" class="spacer">
+                    <div class="zelle katAlkohol"><img src="img/drink.png" class="spacer">
                         <div class="feld" id="zelle9"></div>
 
                     </div>
                 </div>
             </div>
             <div class="reihe">
-                <div class="zelle katFragen"><img src="img/td.png" class="spacer">
+                <div class="zelle katFragen"><img src="img/truth.png" class="spacer">
                     <div class="feld" id="zelle1">
                         <?php
                         for($r = 0; $r<$spieleranzahl; $r++){?>
-                            <img src="img/<?php echo $r+1; ?>emoji.png" width="50px" id="player<?php echo $r+1; ?>" class="playerFigure">
+                            <img width="200px" src="img/<?php echo $r+1; ?>emoji.png"  id="player<?php echo $r+1; ?>" class="playerFigure">
                         <?php }?>
                     </div>
                 </div>
-                <div class="zelle katAlkohol"><img src="img/td.png" class="spacer">
+                <div class="zelle katAlkohol"><img src="img/drink.png" class="spacer">
                     <div class="feld" id="zelle12"></div>
 
                 </div>
-                <div class="zelle katActivity"><img src="img/td.png" class="spacer">
+                <div class="zelle katActivity"><img src="img/activity.png" class="spacer">
                     <div class="feld" id="zelle11"></div>
 
                 </div>
-                <div class="zelle katFragen"><img src="img/td.png" class="spacer">
+                <div class="zelle katFragen"><img src="img/truth.png" class="spacer">
                     <div class="feld" id="zelle10"></div>
 
                 </div>

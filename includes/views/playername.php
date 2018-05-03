@@ -35,7 +35,7 @@
 
 
             </div>
-            <input type="submit" value="Starten">
+            <input class="btn btn-light" type="submit" value="Starten">
         </form>
     </div>
     <a href="index" class="zurueck">Zurück</a>

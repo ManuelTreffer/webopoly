@@ -48,7 +48,11 @@ $spieleranzahl = $this->spieleranzahl;
                         <td><?php echo $playerObj->points; ?></td>
 
                     </tr>
-                <?php endforeach; ?>
+                <?php endforeach;  ?>
+
+
+
+
 
 
                 </tbody>
@@ -57,9 +61,7 @@ $spieleranzahl = $this->spieleranzahl;
 
     </div>
     <br>
-    <a href="spieleranzahl" class="btn"><button class="btn btn-danger" type="button">New Game
-
-        </button></a>
+    <a href="spieleranzahl" class="btn"><button class="btn btn-light" type="button">New Game</button></a>
 </div>
 
 <div class="footer">

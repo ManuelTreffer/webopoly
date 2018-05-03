@@ -26,7 +26,7 @@
             <form action="spielernamen" method="post">
 
                 <input type="number" name="spieleranzahl">
-                <input type="submit" value="Weiter" class="btn btn-danger btn_spieleranzahl">
+                <input type="submit" value="Weiter" class="btn btn-light btn_spieleranzahl">
 
             </form>
 
