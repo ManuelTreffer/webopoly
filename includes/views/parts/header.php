@@ -32,8 +32,8 @@
 <header>
 	<div class="inner">
 		<div class="logo">
-			<div class="name">Adressverwaltung</div>
-			<div class="version">1.0</div>
+			<div class="name">Webopoly</div>
+
 		</div>
 
 		<?php if(LOGGED_IN == true): ?>

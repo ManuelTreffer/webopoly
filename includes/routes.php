@@ -17,5 +17,8 @@ $route['/spielernamen'] = array('controller' => 'PlayerNameController', 'uniqueN
 
 $route['/game'] = array('controller' => 'GameController', 'uniqueName' => 'game');
 
+$route['/endstand'] = array('controller' => 'EndGameController', 'uniqueName' => 'endgame');
+
+$route['/spieleranzahl'] = array('controller' => 'IndexController', 'uniqueName' => 'index');
 
 

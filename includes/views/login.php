@@ -10,16 +10,16 @@ echo $this->header;
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
     <title>Webopoly</title>
-    <link rel="stylesheet" href="css/background.css">
+    <!--<link rel="stylesheet" href="css/background.css">-->
     <link rel="stylesheet" href="css/bootstrap.min.css">
-    <link rel="stylesheet" href="css/style.css">
+    <!--<link rel="stylesheet" href="css/style.css">-->
 
 </head>
 <div id="main">
     <div class="row">
         <h1 class="col-xs-12">Login</h1>
         <p class="col-xs-12">
-            Melden Sie sich bitte an um den Dienst nutzen zu können. Sie besitzen noch keinen Account? Dann können Sie sich <a href="login#registrierung" class="registerOverlay">hier registrieren</a>.
+            Melden Sie sich bitte an, um Webopoly spielen zu können. Sie besitzen noch keinen Account? Dann können Sie sich <a href="login#registrierung" class="registerOverlay">hier registrieren</a>.
         </p>
 
         <form method="post" action="login" class="form-horizontal col-xs-12">
