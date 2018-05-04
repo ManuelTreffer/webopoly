@@ -40,7 +40,6 @@ var questions = [
     "Wann hast du das letzte geduscht?",
     "Was war heute deine letzte Mahlzeit und was?",
     "Würdest du dir ein Tattoo stechen lassen?",
-    "Faltest, rollst oder knüllst du das Klopapier auf der Toilette zusammen?",
     "Wovor hast du am meisten Angst?",
     "Schaust du in die Kloschüssel bevor du dein Geschäft vollziehst?"
 
@@ -61,8 +60,6 @@ var alcohol = [
     "Alle Spieler mit einem „e“ im Namen trinken 2 Schlücke",
     "Du darfst so viele Schlücke verteilen, wie du Onkel hast",
     "Du darfst so viele Schlücke verteilen, wie du Tanten hast",
-    "Trinke zwei Schlücke, wenn du dich schon einmal in einer Schlange vorgedrängelt hast, ansonsten verteile sie",
-    "Mach einen anderen Spieler nach, wer es zuerst herausfindet, wer es ist, verteilt 3 Schlücke",
     "Alle die heute auf Facebook waren, trinken 3 Schlücke",
     "Alle die heute auf WhatsApp waren, trinken 3 Schlücke",
     "Der/Die größte im Raum trinkt 2 Schlücke",

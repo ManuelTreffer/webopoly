@@ -306,7 +306,7 @@ $spieleranzahl = $this->spieleranzahl;
         </table>
 
 
-        <script>
+        <script type="text/javascript">
 
             function getTask() {
 

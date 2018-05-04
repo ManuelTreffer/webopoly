@@ -3,7 +3,7 @@ body {
 
 
     /*display: flex;*/
-    color: white;
+    color: black;
 }
 
 .navbar{
@@ -30,14 +30,22 @@ body {
 }
 
 .middle {
-    width: 65%;
+    width: 45%;
     padding-top: 30px;
 
 }
 
 .right {
-    padding-right: 30px;
+   /* padding-right: 5%;
     padding-top: 30px;
+    padding-left: 5%;
+*/
+    /*align-items: center;*/
+   padding-top: 30px;
+    justify-content: center;
+
+    margin-right: auto;
+    margin-left:auto;
     /*background-color: #e0a800;*/
 }
 

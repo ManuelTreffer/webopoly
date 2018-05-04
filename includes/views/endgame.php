@@ -61,7 +61,7 @@ $spieleranzahl = $this->spieleranzahl;
 
     </div>
     <br>
-    <a href="spieleranzahl" class="btn"><button class="btn btn-light" type="button">New Game</button></a>
+    <a href="spieleranzahl" class="btn"><button class="btn btn-light" type="button">Neues Spiel</button></a>
 </div>
 
 <div class="footer">
