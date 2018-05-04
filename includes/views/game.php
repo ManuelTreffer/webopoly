@@ -41,7 +41,7 @@ $spieleranzahl = $this->spieleranzahl;
     <div id="second_overlay">
         <div id="text">
             <p id="showCurrentPlayer">
-
+                
                 <img src="img/1emoji.png" id="playerEmoji" width="40px" > ist an der Reihe!
 
                 <script>var jmax = <?php echo $spieleranzahl?>;
@@ -280,7 +280,8 @@ $spieleranzahl = $this->spieleranzahl;
     </div>
     <div class="right">
 
-        <h1>Punktetabelle</h1>
+        <!--<h1>Punktetabelle</h1>-->
+        <img src="img/pointtable.png" class="pointtableImg" width="250px">
         <table class="table">
             <thead>
             <tr>

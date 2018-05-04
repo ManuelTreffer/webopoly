@@ -41,12 +41,19 @@ body {
     padding-left: 5%;
 */
     /*align-items: center;*/
-   padding-top: 30px;
+   padding-top: 10px;
     justify-content: center;
 
     margin-right: auto;
     margin-left:auto;
     /*background-color: #e0a800;*/
+
+
+}
+
+
+.pointtableImg {
+    padding-left: 60px;
 }
 
 .spielfeld {
