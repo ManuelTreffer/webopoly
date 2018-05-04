@@ -297,7 +297,7 @@ h3 {
     height: auto;
 }
 
-
+/*
 .katActivity {
     background-color: red;
 }
@@ -313,6 +313,7 @@ h3 {
 .katUeberraschung {
     background-color: blue;
 }
+*/
 
 .rot1{
     transform:rotate(90deg);

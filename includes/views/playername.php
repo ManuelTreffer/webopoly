@@ -23,7 +23,13 @@
         <br>
         <form action="game" method="post">
 
-            <?php for($i = 1; $i <= $this->spieleranzahl; $i++):?>
+            <?php
+            if($this->spieleranzahl == 0 || $this->spieleranzahl > 8){
+                echo "Geben Sie eine Zahl zwischen 1 und 8 ein!";
+                echo "<br><br><a href=\"index\" class=\"zurueck\">Zurück</a>";
+            }else{
+
+            for($i = 1; $i <= $this->spieleranzahl; $i++):?>
             <div class="input-group input-group-sm mb-3 a">
 
                 <p><div class="input-group-prepend">
@@ -31,11 +37,16 @@
                 </div>
                 <input type="text" class="form-control" aria-label="Small" aria-describedby="inputGroup-sizing-sm" name="spielername<?php echo $i; ?>"><br>
                 </p><br><br>
-            <?php endfor; ?>
+            <?php endfor; }?>
 
 
             </div>
-            <input class="btn btn-light" type="submit" value="Starten">
+            <?php if($this->spieleranzahl == 0 || $this->spieleranzahl > 8) {
+            }
+            else{
+                echo "<input class ='btn btn - light' type='submit' value='Starten'>";
+            }
+            ?>
         </form>
     </div>
     <a href="index" class="zurueck">Zurück</a>

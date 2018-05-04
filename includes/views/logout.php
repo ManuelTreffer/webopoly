@@ -10,7 +10,7 @@ echo $this->header;
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
     <title>Webopoly</title>
-    <!--<link rel="stylesheet" href="css/background.css">-->
+    <link rel="stylesheet" href="css/background_login_logout.css">
     <link rel="stylesheet" href="css/bootstrap.min.css">
     <!--<link rel="stylesheet" href="css/style.css">-->
 

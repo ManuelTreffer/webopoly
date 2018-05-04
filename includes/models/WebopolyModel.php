@@ -56,19 +56,21 @@ class WebopolyModel
 
 	public static function insertPlayers($spieleranzahl)
     {
-        $eintrag = "INSERT INTO webopoly (player) VALUES ";
 
-        for($i = 1; $i <= $spieleranzahl; $i++)
-        {
-            $eintrag .= "('".$_POST["spielername".$i]."'),";
+
+            $eintrag = "INSERT INTO webopoly (player) VALUES ";
+
+            for ($i = 1; $i <= $spieleranzahl; $i++) {
+                $eintrag .= "('" . $_POST["spielername" . $i] . "'),";
+            }
+
+            $eintrag = substr($eintrag, 0, -1);
+
+
+            $db = new Database();
+            $db->query($eintrag);
         }
 
-        $eintrag = substr($eintrag, 0, -1);
-
-
-        $db = new Database();
-        $db->query($eintrag);
-    }
 
     public static function getPlayers()
     {
