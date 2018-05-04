@@ -1,5 +1,5 @@
 body {
-    font-family: Arial;
+    font-family: "DK Lemon Yellow Sun";
 
 
     /*display: flex;*/
@@ -54,6 +54,11 @@ body {
 
 .pointtableImg {
     padding-left: 60px;
+    padding-bottom: 20px;
+}
+
+.pointtable{
+    padding-top: 20px;
 }
 
 .spielfeld {
@@ -399,6 +404,13 @@ img .playerFigure{
 
 .impressum_text {
     font-weight: bold;
+    align-items: center;
+    justify-content: center;
+
+    margin: auto;
+}
+
+h6{
     align-items: center;
     justify-content: center;
 

@@ -2,5 +2,7 @@ body {
 
     background-image: url("../img/background_2_2.jpg");
     background-size: 100%;
+    color: white; !important;
+    font-family: "DK Lemon Yellow Sun";
 
 }

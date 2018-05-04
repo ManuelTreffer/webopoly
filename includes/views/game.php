@@ -281,8 +281,9 @@ $spieleranzahl = $this->spieleranzahl;
     <div class="right">
 
         <!--<h1>Punktetabelle</h1>-->
-        <img src="img/pointtable.png" class="pointtableImg" width="250px">
-        <table class="table">
+      <div>
+        <img src="img/pointtable.png" class="pointtableImg" width="250px"><br></div>
+        <div class="pointtable"><table class="table">
             <thead>
             <tr>
                 <th scope="col">#</th>
@@ -305,7 +306,7 @@ $spieleranzahl = $this->spieleranzahl;
 
             </tbody>
         </table>
-
+    </div>
 
         <script type="text/javascript">
 

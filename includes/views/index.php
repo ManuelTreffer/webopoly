@@ -31,11 +31,11 @@
             </form>
 
             <br><br>
-            <h6>Bitte gib einen Wert zwischen 1 und 8 ein!</h6>
+
 
 
         </div>
-    </div></div>
+    </div><h6>Bitte gib einen Wert zwischen 1 und 8 ein!</h6></div>
 
 <div class="footer">
 
