@@ -44,12 +44,12 @@
             <?php if($this->spieleranzahl == 0 || $this->spieleranzahl > 8) {
             }
             else{
-                echo "<input class ='btn btn - light' type='submit' value='Starten'>";
+                echo "<input class ='btn btn - light' type='submit' value='Starten'><br><a href=\"index\" class=\"zurueck\">Zurück</a>";
             }
             ?>
         </form>
     </div>
-    <a href="index" class="zurueck">Zurück</a>
+
 </div>
 
 
