@@ -10,7 +10,7 @@ public function run(){
 
    // require("../phpfiles/database_connection.php");
 
-    WebopolyModel::showEndgame();
+    $this->view->playerboard = WebopolyModel::showEndgame();
 
 }
 

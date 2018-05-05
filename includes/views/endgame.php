@@ -40,10 +40,10 @@ $spieleranzahl = $this->spieleranzahl;
                 </thead>
                 <tbody>
 
-               <?php foreach($playerboard as $key => $playerObj): ?>
+                <?php foreach($this->playerboard as $key => $playerObj): ?>
                     <tr <?php if($key > 0): ?>class="opacity tr<?php echo ($key+1); ?>"<?php endif; ?>>
                         <th scope="row"><?php echo $key+1?></th>
-                        <td><img src="../<?php echo $playerObj->id; ?>emoji.png" width="32px"></td>
+                        <td><img src="img/<?php echo $playerObj->id; ?>emoji.png" width="32px"></td>
                         <td><?php echo $playerObj->player; ?></td>
                         <td><?php echo $playerObj->points; ?></td>
 
@@ -63,14 +63,14 @@ $spieleranzahl = $this->spieleranzahl;
     <br>
     <a href="spieleranzahl" class="btn"><button class="btn btn-light" type="button">Neues Spiel</button></a>
 </div>
-
+<!--
 <div class="footer">
 
         <a class="nav-link" href="impressum">Impressum</a>
 
 
 
-</div>
+</div>-->
 
 
 
