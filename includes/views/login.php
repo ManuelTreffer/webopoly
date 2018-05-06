@@ -19,9 +19,10 @@ echo $this->header;
 </head>
 <div id="main">
     <div class="row">
-        <h1 class="col-xs-12">WEBopoly Login</h1>
+        <br>
+        <h1 class="col-xs-12"><br>WEBopoly Login</h1>
         <p class="col-xs-12">
-            Melden Sie sich bitte an, um WEBopoly spielen zu können. Sie besitzen noch keinen Account? Dann können Sie sich <a href="login#registrierung" class="registerOverlay">hier registrieren</a>.
+            <br>Melden Sie sich bitte an, um WEBopoly spielen zu können. Sie besitzen noch keinen Account? Dann können Sie sich <a href="login#registrierung" class="registerOverlay">hier registrieren</a>.
         </p>
 
         <form method="post" action="login" class="form-horizontal col-xs-12">
@@ -33,15 +34,15 @@ echo $this->header;
                     <h4>Benutzername und/oder Passwort sind falsch</h4>
                     <p>Prüfen Sie bitte ob Sie sich nicht vertippt haben und versuchen Sie es erneut!</p>
                 </div>
-            <?php endif; ?>
+            <?php endif; ?><br>
             <div class="form-group">
-                <label for="username" class="col-xs-12 col-md-2">Benutzername</label>
+                <label for="username" class="col-xs-12 col-md-2"></label>
                 <div class="col-xs-12 col-md-10">
                     <input type="text" name="username" id="username" class="text form-control" value="" placeholder="Benutzername">
                 </div>
             </div>
             <div class="form-group">
-                <label for="password" class="col-xs-12 col-md-2">Passwort</label>
+                <label for="password" class="col-xs-12 col-md-2"></label>
                 <div class="col-xs-12 col-md-10">
                     <input type="password" name="password" id="password" class="text form-control" value="" placeholder="Passwort">
                 </div>
@@ -67,7 +68,7 @@ echo $this->header;
                     </p>
 
                     <form method="post" action="login" class="col-xs-12 resgisterForm">
-
+                        <br>
                         <div class="form-group">
                             <label for="name">Benutzername:</label>
                             <input type="text" class="form-control" name="name" id="name" placeholder="Benutzernamen eingeben">

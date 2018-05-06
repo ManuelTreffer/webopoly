@@ -19,7 +19,7 @@
     <div class="playerNames">
 
         <br>
-        <h3>Spielernamen eingeben:</h3>
+        <h2>Spielernamen eingeben:</h2>
         <br>
         <form action="game" method="post">
 

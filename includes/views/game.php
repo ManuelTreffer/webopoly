@@ -49,7 +49,7 @@ $spieleranzahl = $this->spieleranzahl;
 
                 </script>
             </p>
-
+<h1>
             <div id="textQuestions">
              <!--   <script type="text/javascript" src="../js/questionsArray.js"></script>-->
 
@@ -58,8 +58,8 @@ $spieleranzahl = $this->spieleranzahl;
 
 
                 <br>
-                <p id="demo">
-                <h4>Aufgabe erledigt?</h4>
+                <p id="demo"></h1>
+                <h4><br>Aufgabe erledigt?</h4>
                 <button id="pointsYesBtn" onclick="countScore(); off();" class="btn pointsYes btn-dark" value="0">JA</button>
                 <button id="pointsNoBtn" onclick=" nextPlayer(); off();" class="btn pointsNo btn-danger">NEIN</button>
 
@@ -172,29 +172,12 @@ $spieleranzahl = $this->spieleranzahl;
                     }
 
 
-
-
-                    // uebergeben von currentPlayer und position des players
-
-                    /*$.ajax({
-                        'url': '../savePosition.php',
-                        'method': 'post',
-                        'data': {'position': playerPosition[zugSpieler-1], 'userid': zugSpieler},
-                        'success': function(receivedData) {
-                            //im erfolgsfall
-                            if(receivedData.result) {
-                                //console.log('hat geklappt');
-                            } else {
-                                //console.log('hat nicht geklappt');
-                            }
-                        }
-                    });*/
                 }
 
 
             </script>
 
-
+<br>
             <img src="img/1.png" id="dice" width="100px" >
         </div>
 

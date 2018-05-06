@@ -20,7 +20,7 @@
     <div class="playerQuantity">
 
         <br>
-        <h3>Spieleranzahl eingeben:</h3>
+        <h2>Spieleranzahl eingeben:</h2>
         <br>
         <div class="input-group mb-3 a">
             <form action="spielernamen" method="post">
