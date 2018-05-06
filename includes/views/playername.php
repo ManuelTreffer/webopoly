@@ -33,10 +33,10 @@
             <div class="input-group input-group-sm mb-3 a">
 
                 <p><div class="input-group-prepend">
-                    <span class="input-group-text" id="inputGroup-sizing-sm"><img src="img/<?php echo $i; ?>emoji.png" width="30px"> </span>
+                    <span class="input-group-text" id="inputGroup-sizing-sm"><img src="img/<?php echo $i; ?>emoji.png" width="21px"> </span>
                 </div>
                 <input type="text" class="form-control" aria-label="Small" aria-describedby="inputGroup-sizing-sm" name="spielername<?php echo $i; ?>"><br>
-                </p><br><br>
+                <br></p><br><br>
             <?php endfor; }?>
 
 

@@ -318,8 +318,8 @@ h3 {
   float:left;
   width:25%;
   position: relative;
- /* border-right: 3px solid rgba(0, 0, 0, 0.0);
-  box-sizing: border-box;*/
+border-right: 3px double rgba(0, 0, 0, 0.0);
+  /*box-sizing: border-box;*/
 
 
 }
@@ -367,8 +367,11 @@ h3 {
 
 
 .boardMiddle img {
-  width:100%;
+  width:90%;
   height: auto;
+  padding-left: 7%;
+  padding-top: 7%;
+  margin: auto;
 }
 
 .field {
@@ -398,8 +401,11 @@ h6{
 }
 
 .cell .playerFigure {
-  width: 50px;
+  width: 30%;
   height: auto;
+
+  padding-left: 10px;
+  padding-top: 10px;
 }
 
 

@@ -392,8 +392,8 @@ h3 {
   float: left;
   width: 25%;
   position: relative;
-  /* border-right: 3px solid rgba(0, 0, 0, 0.0);
-   box-sizing: border-box;*/
+  border-right: 3px double transparent;
+  /*box-sizing: border-box;*/
 }
 
 /* line 328, ../scss/style.scss */
@@ -441,11 +441,14 @@ h3 {
 
 /* line 369, ../scss/style.scss */
 .boardMiddle img {
-  width: 100%;
+  width: 90%;
   height: auto;
+  padding-left: 7%;
+  padding-top: 7%;
+  margin: auto;
 }
 
-/* line 374, ../scss/style.scss */
+/* line 377, ../scss/style.scss */
 .field {
   position: absolute;
   left: 0;
@@ -454,7 +457,7 @@ h3 {
   top: 0;
 }
 
-/* line 383, ../scss/style.scss */
+/* line 386, ../scss/style.scss */
 .inner .impressumText {
   font-weight: bold;
   align-items: center;
@@ -464,20 +467,22 @@ h3 {
   text-shadow: 1px 1px 2px #000000;
 }
 
-/* line 393, ../scss/style.scss */
+/* line 396, ../scss/style.scss */
 h6 {
   align-items: center;
   justify-content: center;
   margin: auto;
 }
 
-/* line 400, ../scss/style.scss */
+/* line 403, ../scss/style.scss */
 .cell .playerFigure {
-  width: 50px;
+  width: 30%;
   height: auto;
+  padding-left: 10px;
+  padding-top: 10px;
 }
 
-/* line 406, ../scss/style.scss */
+/* line 412, ../scss/style.scss */
 #text {
   position: absolute;
   top: 50%;
@@ -489,45 +494,45 @@ h6 {
   -ms-transform: translate(-60%, -50%);
 }
 
-/* line 417, ../scss/style.scss */
+/* line 423, ../scss/style.scss */
 .registerOverlay {
   color: #708090;
 }
 
-/* line 421, ../scss/style.scss */
+/* line 427, ../scss/style.scss */
 .registerOverlay:hover {
   color: #ffffff;
   text-shadow: 1px 1px 2px #000000;
   text-decoration: none;
 }
 
-/* line 427, ../scss/style.scss */
+/* line 433, ../scss/style.scss */
 .col-xs-12 .form-group {
   padding-left: 20px;
 }
 
-/* line 430, ../scss/style.scss */
+/* line 436, ../scss/style.scss */
 .col-xs-12 .loginBtn {
   margin-left: 35px;
 }
 
-/* line 434, ../scss/style.scss */
+/* line 440, ../scss/style.scss */
 .modal-body .col-xs-12 {
   padding-left: 20px;
 }
 
-/* line 438, ../scss/style.scss */
+/* line 444, ../scss/style.scss */
 h1 {
   font-size: 30px;
 }
 
-/* line 441, ../scss/style.scss */
+/* line 447, ../scss/style.scss */
 h2 {
   font-size: 25px;
   text-align: center;
 }
 
-/* line 445, ../scss/style.scss */
+/* line 451, ../scss/style.scss */
 h4 {
   font-size: 18px;
   line-height: 125%;
