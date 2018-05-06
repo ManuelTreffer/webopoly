@@ -12,14 +12,16 @@ echo $this->header;
     <title>Webopoly</title>
     <link rel="stylesheet" href="css/background_login_logout.css">
     <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/background.css">
+    <link rel="stylesheet" href="css/style.css">
     <!--<link rel="stylesheet" href="css/style.css">-->
 
 </head>
 <div id="main">
     <div class="row">
-        <h1 class="col-xs-12">Login</h1>
+        <h1 class="col-xs-12">WEBopoly Login</h1>
         <p class="col-xs-12">
-            Melden Sie sich bitte an, um Webopoly spielen zu können. Sie besitzen noch keinen Account? Dann können Sie sich <a href="login#registrierung" class="registerOverlay">hier registrieren</a>.
+            Melden Sie sich bitte an, um WEBopoly spielen zu können. Sie besitzen noch keinen Account? Dann können Sie sich <a href="login#registrierung" class="registerOverlay">hier registrieren</a>.
         </p>
 
         <form method="post" action="login" class="form-horizontal col-xs-12">
@@ -44,7 +46,7 @@ echo $this->header;
                     <input type="password" name="password" id="password" class="text form-control" value="" placeholder="Passwort">
                 </div>
             </div>
-            <button type="submit" class="btn btn-light">Anmelden</button>
+            <button type="submit" class="btn btn-light loginBtn">Anmelden</button>
             <input type="hidden" name="action" value="login">
         </form>
     </div>
@@ -54,8 +56,9 @@ echo $this->header;
     <div class="modal-dialog" role="document">
         <div class="modal-content">
             <div class="modal-header">
-                <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+
                 <h4 class="modal-title" id="registerModalLabel">Registrierung</h4>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
             </div>
             <div class="modal-body">
                 <div class="row">
@@ -63,7 +66,7 @@ echo $this->header;
                         Wir benötigen folgende Angaben um Sie für unseren Dienst registrieren zu können:
                     </p>
 
-                    <form method="post" action="login" class="col-xs-12">
+                    <form method="post" action="login" class="col-xs-12 resgisterForm">
 
                         <div class="form-group">
                             <label for="name">Benutzername:</label>
@@ -84,11 +87,16 @@ echo $this->header;
                 </div>
             </div>
             <div class="modal-footer">
-                <button type="button" class="btn btn-default" data-dismiss="modal">Abbrechen</button>
+                <button type="button" class="btn btn-light" data-dismiss="modal">Abbrechen</button>
                 <button type="button" class="btn btn-primary">Registrieren</button>
             </div>
         </div>
     </div>
+</div>
+<div class="footer">
+
+    <a class="nav-link" href="impressum">Impressum</a>
+
 </div>
 <?php
 

@@ -14,10 +14,10 @@
 <div class="inner">
     <div class="logo">
 
-        <img src="img/logo.png" class="logo_image">
+        <img src="img/logo.png" class="logoImage">
 
     </div>
-    <div class="spieleranzahl">
+    <div class="playerQuantity">
 
         <br>
         <h3>Spieleranzahl eingeben:</h3>
@@ -25,8 +25,9 @@
         <div class="input-group mb-3 a">
             <form action="spielernamen" method="post">
 
+
                 <input type="number" name="spieleranzahl">
-                <input type="submit" value="Weiter" class="btn btn-light btn_spieleranzahl">
+                <input type="submit" value="Weiter" class="btn btn-light">
 
             </form>
 

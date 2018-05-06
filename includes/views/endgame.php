@@ -18,15 +18,16 @@ $spieleranzahl = $this->spieleranzahl;
 <div class="inner">
     <div class="logo">
 
-        <img src="img/logo.png" class="logo_image">
+        <img src="img/logo.png" class="logoImage">
 
     </div>
-    <div class="endstand">
+
+    <div class="finalScore">
 
         <br>
         <h3>Gratulation! <br> So sehen Sieger aus:</h3>
         <br>
-        <div class="ranking_endstand">
+        <div class="rankingFinal">
 
 
             <table class="table">
@@ -63,15 +64,6 @@ $spieleranzahl = $this->spieleranzahl;
     <br>
     <a href="spieleranzahl" class="btn"><button class="btn btn-light" type="button">Neues Spiel</button></a>
 </div>
-<!--
-<div class="footer">
-
-        <a class="nav-link" href="impressum">Impressum</a>
-
-
-
-</div>-->
-
 
 
 <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"

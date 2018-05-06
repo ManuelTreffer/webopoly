@@ -12,12 +12,13 @@ class GameController extends Controller
 
 
 
+        $this->checkForScoreSave();
 
         WebopolyModel::insertPlayers($this->view->spieleranzahl);
 
         $this->view->players = WebopolyModel::getPlayers();
 
-        $this->checkForScoreSave();
+
 
     }
 

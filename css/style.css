@@ -1,5 +1,7 @@
 body {
-    font-family: "DK Lemon Yellow Sun";
+    /*font-family: "DK Lemon Yellow Sun";
+    font-family: "Skia";*/
+    font-family: "Arial Rounded MT Bold";
 
 
     /*display: flex;*/
@@ -59,27 +61,29 @@ body {
 
 .pointtable{
     padding-top: 20px;
+    color: white;
+    text-shadow: 1px 1px 2px black;
 }
 
-.spielfeld {
+.board {
     margin: auto;
     position: absolute;
     /*width: inherit;*/
     height: 80%;
 }
 
-.wuerfel_1 {
+.dice1 {
     margin: auto;
     display: table;
 
 }
 
-.wuerfel_1 image {
+.dice1 image {
     display: table-cell;
     vertical-align: center;
 }
 
-#wuerfel{
+#dice{
     border-radius: 17px;
     margin: auto;
     display: table-cell;
@@ -97,7 +101,7 @@ body {
 
 }
 
-.logo_image {
+.logoImage {
 
     width: 20%;
     margin: auto;
@@ -105,7 +109,7 @@ body {
 
 }
 
-.spieleranzahl {
+.playerQuantity {
 
     padding-top: 2.5em;
     align-items: center;
@@ -130,7 +134,7 @@ body {
 
 }
 
-.zurueck {
+.back {
     align-items: center;
     justify-content: center;
     padding-top: 12px;
@@ -138,12 +142,12 @@ body {
 
 }
 
-.zurueck a {
+.back a {
     text-decoration: none;
     color: white;
 }
 
-.zurueck:visited {
+.back:visited {
     color: white;
     text-decoration: none;
 }
@@ -152,7 +156,7 @@ h3 {
     text-align: center;
 }
 
-.spielernamen {
+.playerNames {
 
     align-items: center;
     justify-content: center;
@@ -168,7 +172,7 @@ h3 {
     margin-bottom: 0;
 }
 
-.awesome_container{
+.awesomeContainer{
     height: 800px;
     display: flex;
 }
@@ -186,7 +190,7 @@ h3 {
 
 }
 
-.ranking_endstand{
+.rankingFinal{
     width: 40%;
    margin: auto;
     font-weight: bold;
@@ -218,7 +222,7 @@ h3 {
     cursor: pointer; /* Add a pointer on hover */
 }
 
-#second_overlay{
+#secondOverlay{
 
     position: fixed; /* Sit on top of the page content */
     width: 60%; /* Full width (cover the whole page) */
@@ -270,22 +274,14 @@ h3 {
 }
 
 
-.emojis_small
+.emojisSmall
 {
     width: 40px;
 
 }
 
 
-
-
-
-/*.spielbrettTabelle table, td, tr {
-    border: 1px solid black;
-    overflow: visible;
-}
-*/
-.spielbrettTabelle {
+.boardTable {
     /*padding: 40px;*/
     width: 100%;
     height: 100%;
@@ -293,7 +289,7 @@ h3 {
 
 }
 
-.spielbrettTabelle img {
+.boardTable img {
     width: 400px;
     height: 300px;
 }
@@ -304,36 +300,15 @@ h3 {
 }
 
 
-
-/*.zelle {
-    width: 25%;
-    height: 25%;
-    overflow: visible;
-}*/
-
-.zelle {
+.cell {
     display: block;
-    width: auto;
+    /*width: auto;*/
     height: auto;
+    float:left;
+    width:25%;
+    position: relative;
 }
 
-/*
-.katActivity {
-    background-color: red;
-}
-
-.katAlkohol {
-    background-color: green;
-}
-
-.katFragen {
-    background-color: yellow;
-}
-
-.katUeberraschung {
-    background-color: blue;
-}
-*/
 
 .rot1{
     transform:rotate(90deg);
@@ -348,49 +323,39 @@ h3 {
     margin: auto;
 }
 
-.zelle img{
+.cell img{
     width: 25px;
     height: 25px;
 }
 
 
-.zelle .spacer {
+.cell .spacer {
     width:100%;
     height:auto;
 }
 
-.zelle {
-    float:left;
-}
 
-.links, .rechts {
+.boardLeft, .boardRight {
     width:25%;
     float:left;
 }
 
-.mitte {
+.boardMiddle {
     width:50%;
     float:left;
 }
 
-.links .zelle, .rechts .zelle {
+.boardLeft .cell, .boardRight .cell {
     width:100%;
 }
 
 
-.mitte img {
+.boardMiddle img {
     width:100%;
     height: auto;
 }
 
-
-.zelle {
-    width:25%;
-    float:left;
-    position: relative;
-}
-
-.feld {
+.field {
     position: absolute;
     left:0;
     right:0;
@@ -398,16 +363,15 @@ h3 {
     top:0;
 }
 
-img .playerFigure{
-    width: 60px;
-}
 
-.impressum_text {
+.inner .impressumText{
     font-weight: bold;
     align-items: center;
     justify-content: center;
 
     margin: auto;
+    color: white;
+    text-shadow: 1px 1px 2px black;
 }
 
 h6{
@@ -415,4 +379,42 @@ h6{
     justify-content: center;
 
     margin: auto;
+}
+
+.cell .playerFigure {
+    width: 50px;
+    height: auto;
+}
+
+
+#text{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    font-size: 35px;
+    color: black;
+    transform: translate(-60%, -50%);
+    /*text-shadow: 5px 5px 5px black;*/
+    -ms-transform: translate(-60%,-50%);
+}
+
+.registerOverlay{
+    color: slategrey;
+
+}
+.registerOverlay:hover{
+     color: white;
+    text-shadow: 1px 1px 2px black;
+    text-decoration: none;
+ }
+
+.col-xs-12 .form-group{
+    padding-left: 20px;
+}
+.col-xs-12 .loginBtn{
+    margin-left: 35px;
+}
+
+.modal-body .col-xs-12{
+    padding-left: 20px;
 }

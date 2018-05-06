@@ -33,11 +33,11 @@
 <div class="inner">
     <div class="logo">
 
-        <img src="img/logo.png" class="logo_image">
+        <img src="img/logo.png" class="logoImage">
 
     </div>
-    <div class="impressum_text mb-3">
-
+    <div class="impressumText mb-3">
+        <br>
         <p>Hallo, danke, dass ihr unser Spiel gespielt habt! Für Fragen stehen wir gerne zur Verfügung bzw. haben ein cooles Video dazu gedreht!</p>
         <br>
         <p>PS: Wusstet ihr schon, dass unser Spiel erst ab 18 Jahren ist? Wir fördern den aktiven Alkoholkonsum natürlich nicht!</p>
@@ -47,7 +47,7 @@
 
 
     </div>
-    <div class="image_jump mb-3"><img src="img/Emoji1Jump.gif" width="200px"></div></div>
+    <div class="imageJump mb-3"><img src="img/Emoji1Jump.gif" width="200px"></div></div>
 
 
 <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"

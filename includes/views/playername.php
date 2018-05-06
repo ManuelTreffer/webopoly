@@ -13,10 +13,10 @@
 <div class="inner">
     <div class="logo">
 
-        <img src="img/logo.png" class="logo_image">
+        <img src="img/logo.png" class="logoImage">
 
     </div>
-    <div class="spielernamen">
+    <div class="playerNames">
 
         <br>
         <h3>Spielernamen eingeben:</h3>
@@ -26,7 +26,7 @@
             <?php
             if($this->spieleranzahl == 0 || $this->spieleranzahl > 8){
                 echo "Geben Sie eine Zahl zwischen 1 und 8 ein!";
-                echo "<br><br><a href=\"index\" class=\"zurueck\">Zurück</a>";
+                echo "<br><br><a href=\"index\" class=\"back\">Zurück</a>";
             }else{
 
             for($i = 1; $i <= $this->spieleranzahl; $i++):?>
@@ -44,7 +44,7 @@
             <?php if($this->spieleranzahl == 0 || $this->spieleranzahl > 8) {
             }
             else{
-                echo "<input class ='btn btn - light' type='submit' value='Starten'><br><a href=\"index\" class=\"zurueck\">Zurück</a>";
+                echo "<input class ='btn btn-light' type='submit' value='Starten'><br><a href=\"index\" class=\"back\">Zurück</a>";
             }
             ?>
         </form>

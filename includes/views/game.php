@@ -14,23 +14,7 @@ $spieleranzahl = $this->spieleranzahl;
     <link rel="stylesheet" href="css/style.css">
 
 
-    <!--
-    Folgendes <style> ist für das Design der Fragen/...!
-    -->
 
-
-    <style>
-        #text{
-            position: absolute;
-            top: 50%;
-            left: 50%;
-            font-size: 35px;
-            color: black;
-            transform: translate(-60%, -50%);
-            /*text-shadow: 5px 5px 5px black;*/
-            -ms-transform: translate(-60%,-50%);
-        }
-    </style>
 </head>
 
 <body>
@@ -38,11 +22,14 @@ $spieleranzahl = $this->spieleranzahl;
     var qtyPlayers = <?php echo $spieleranzahl; ?>;
 </script>
 <div id="overlay" >
-    <div id="second_overlay">
+    <div id="secondOverlay">
         <div id="text">
             <p id="showCurrentPlayer">
                 
                 <img src="img/1emoji.png" id="playerEmoji" width="40px" > ist an der Reihe!
+
+                <!-- TODO: javascript auslagern! -->
+
 
                 <script>var jmax = <?php echo $spieleranzahl?>;
                     var j=1;
@@ -63,8 +50,8 @@ $spieleranzahl = $this->spieleranzahl;
                 </script>
             </p>
 
-            <div id="text_questions">
-                <script type="text/javascript" src="../js/questions_array.js"></script>
+            <div id="textQuestions">
+             <!--   <script type="text/javascript" src="../js/questionsArray.js"></script>-->
 
 
 
@@ -73,8 +60,8 @@ $spieleranzahl = $this->spieleranzahl;
                 <br>
                 <p id="demo">
                 <h4>Aufgabe erledigt?</h4>
-                <button id="points_yes_btn" onclick="countScore(); off();" class="btn punkte_ja btn-dark" value="0">JA</button>
-                <button id="points_no_btn" onclick=" nextPlayer(); off();" class="btn punkte_nein btn-danger">NEIN</button>
+                <button id="pointsYesBtn" onclick="countScore(); off();" class="btn pointsYes btn-dark" value="0">JA</button>
+                <button id="pointsNoBtn" onclick=" nextPlayer(); off();" class="btn pointsNo btn-danger">NEIN</button>
 
                 </p></div>
         </div>
@@ -105,7 +92,7 @@ $spieleranzahl = $this->spieleranzahl;
         </li>
     </ul>
 </div>
-<div class="awesome_container">
+<div class="awesomeContainer">
 
 
 
@@ -113,7 +100,7 @@ $spieleranzahl = $this->spieleranzahl;
 
     <div class="left">
 
-        <div class="wuerfel_1">
+        <div class="dice1">
 
             <?php for($i = 0; $i <=10; $i++){
                 echo "<br>";
@@ -127,14 +114,18 @@ $spieleranzahl = $this->spieleranzahl;
 
             <p id="randomNumber"></p>
 
-            <script>
+
+            <!-- TODO: auslagern-->
+
+
+         <script>
 
 
                 var randomNumber;
                 function myFunction() {
                     randomNumber = Math.round(Math.random() * (1 - 6)) + 6;
                     //document.getElementById("randomNumber").innerHTML = randomNumber;
-                    document.getElementById("wuerfel").src = "img/" + randomNumber + ".png";
+                    document.getElementById("dice").src = "img/" + randomNumber + ".png";
 
 
 
@@ -165,7 +156,7 @@ $spieleranzahl = $this->spieleranzahl;
                         playerPosition[zugSpieler-1]+=randomNumber;
                     }
 
-                    document.getElementById("zelle"+playerPosition[zugSpieler-1]).appendChild(document.getElementById('player' + zugSpieler)).innerHTML;
+                    document.getElementById("cell"+playerPosition[zugSpieler-1]).appendChild(document.getElementById('player' + zugSpieler)).innerHTML;
 
 
                     on();
@@ -202,75 +193,81 @@ $spieleranzahl = $this->spieleranzahl;
 
 
             </script>
-            <img src="img/1.png" id="wuerfel" width="100px" >
+
+
+            <img src="img/1.png" id="dice" width="100px" >
         </div>
 
 
     </div>
     <div class="middle">
 
+
+        <!-- TODO: probieren, ob man katFragen etc löschen kann -->
+
+
         <div class="gameboard">
             <div class="reihe">
-                <div class="zelle katFragen"><img src="img/truth.png" class="spacer">
-                    <div class="feld" id="zelle4"></div>
+                <div class="cell"><img src="img/truth.png" class="spacer">
+                    <div class="field" id="cell4"></div>
                 </div>
-                <div class="zelle katActivity"><img src="img/activity.png" class="spacer">
-                    <div class="feld" id="zelle5"></div>
+                <div class="cell"><img src="img/activity.png" class="spacer">
+                    <div class="field" id="cell5"></div>
 
                 </div>
-                <div class="zelle katAlkohol"><img src="img/drink.png" class="spacer">
-                    <div class="feld" id="zelle6"></div>
+                <div class="cell"><img src="img/drink.png" class="spacer">
+                    <div class="field" id="cell6"></div>
 
                 </div>
-                <div class="zelle katFragen"><img src="img/truth.png" class="spacer">
-                    <div class="feld" id="zelle7"></div>
+                <div class="cell"><img src="img/truth.png" class="spacer">
+                    <div class="field" id="cell7"></div>
 
                 </div>
             </div>
             <div class="reihe">
-                <div class="links">
-                    <div class="zelle katAlkohol"><img src="img/drink.png" class="spacer">
-                        <div class="feld" id="zelle3"></div>
+                <div class="boardLeft">
+                    <div class="cell"><img src="img/drink.png" class="spacer">
+                        <div class="field" id="cell3"></div>
 
                     </div>
-                    <div class="zelle katActivity"><img src="img/activity.png" class="spacer">
-                        <div class="feld" id="zelle2"></div>
+                    <div class="cell"><img src="img/activity.png" class="spacer">
+                        <div class="field" id="cell2"></div>
 
                     </div>
                 </div>
-                <div class="mitte">
+                <div class="boardMiddle">
                     <img src="img/logo.png" alt="WEBopoly">
                 </div>
-                <div class="rechts">
-                    <div class="zelle katActivity"><img src="img/activity.png" class="spacer">
-                        <div class="feld" id="zelle8"></div>
+                <div class="boardRight">
+                    <div class="cell"><img src="img/activity.png" class="spacer">
+                        <div class="field" id="cell8"></div>
 
                     </div>
-                    <div class="zelle katAlkohol"><img src="img/drink.png" class="spacer">
-                        <div class="feld" id="zelle9"></div>
+                    <div class="cell"><img src="img/drink.png" class="spacer">
+                        <div class="field" id="cell9"></div>
 
                     </div>
                 </div>
             </div>
             <div class="reihe">
-                <div class="zelle katFragen"><img src="img/truth.png" class="spacer">
-                    <div class="feld" id="zelle1">
+                <div class="cell"><img src="img/truth.png" class="spacer">
+                    <div class="field" id="cell1">
                         <?php
                         for($r = 0; $r<$spieleranzahl; $r++){?>
                             <img width="200px" src="img/<?php echo $r+1; ?>emoji.png"  id="player<?php echo $r+1; ?>" class="playerFigure">
                         <?php }?>
                     </div>
                 </div>
-                <div class="zelle katAlkohol"><img src="img/drink.png" class="spacer">
-                    <div class="feld" id="zelle12"></div>
+                <div class="cell"><img src="img/drink.png" class="spacer">
+                    <div class="field" id="cell12"></div>
 
                 </div>
-                <div class="zelle katActivity"><img src="img/activity.png" class="spacer">
-                    <div class="feld" id="zelle11"></div>
+                <div class="cell"><img src="img/activity.png" class="spacer">
+                    <div class="field" id="cell11"></div>
 
                 </div>
-                <div class="zelle katFragen"><img src="img/truth.png" class="spacer">
-                    <div class="feld" id="zelle10"></div>
+                <div class="cell"><img src="img/truth.png" class="spacer">
+                    <div class="field" id="cell10"></div>
 
                 </div>
             </div>
@@ -280,9 +277,8 @@ $spieleranzahl = $this->spieleranzahl;
     </div>
     <div class="right">
 
-        <!--<h1>Punktetabelle</h1>-->
       <div>
-        <img src="img/pointtable.png" class="pointtableImg" width="250px"><br></div>
+        <img src="img/pointtable.png" class="pointtableImg" width="250px"></div>
         <div class="pointtable"><table class="table">
             <thead>
             <tr>
@@ -308,7 +304,7 @@ $spieleranzahl = $this->spieleranzahl;
         </table>
     </div>
 
-        <script type="text/javascript">
+     <script type="text/javascript">
 
             function getTask() {
 
@@ -338,7 +334,7 @@ $spieleranzahl = $this->spieleranzahl;
         </script>
 
 
-        <!--<button id="aufgabe" class="btn btn-light" >Zur Frage</button>-->
+
 
         <script type="text/javascript">
 
@@ -357,8 +353,8 @@ $spieleranzahl = $this->spieleranzahl;
 </div>
 
 
-<!--<script type="text/javascript" src="../js/showCurrentPlayer.js"></script>-->
-<script type="text/javascript" src="js/alleAufgabenZusammen.js"></script>
+<script type="text/javascript" src="js/game.js"></script>
+<script type="text/javascript" src="js/allTasks.js"></script>
 <script type="text/javascript" src="js/counterNew.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"

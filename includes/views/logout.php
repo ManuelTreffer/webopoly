@@ -12,6 +12,8 @@ echo $this->header;
     <title>Webopoly</title>
     <link rel="stylesheet" href="css/background_login_logout.css">
     <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/background.css">
+    <link rel="stylesheet" href="css/style.css">
     <!--<link rel="stylesheet" href="css/style.css">-->
 
     <div id="main">
@@ -20,7 +22,7 @@ echo $this->header;
 
         </div>
         <div class="text">
-           <br><p class="col-xs-12">Sie sind jetzt abgemeldet. <a href="login">Klicken Sie hier um sich wieder anzumelden.</a></p>
+           <br><p class="col-xs-12">Sie sind jetzt abgemeldet. <a href="login" class="registerOverlay">Klicken Sie hier um sich wieder anzumelden.</a></p>
         </div>
     </div>
 
