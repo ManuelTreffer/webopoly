@@ -19,6 +19,12 @@ You decide if you get the point or not. So, please be honest to yourself.
 Winner is the person with the highest score.
 
 
+
+--------------
+# Die Aufteilung finden Sie im Ordner "Sonstige Datein" --> aufteilungProjekt.docx
+--------------
+
+
 ## Konfiguration
 
 Passen Sie bitte die Dateien /.htaccess, /includes/dbconfig.php und /includes/config.php entsprechend an. 
