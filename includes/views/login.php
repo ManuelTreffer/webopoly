@@ -14,16 +14,18 @@ echo $this->header;
     <link rel="stylesheet" href="css/bootstrap.min.css">
     <link rel="stylesheet" href="css/background.css">
     <link rel="stylesheet" href="css/style.css">
-    <!--<link rel="stylesheet" href="css/style.css">-->
+   
 
 </head>
 <div id="main">
     <div class="row">
         <br>
-        <h1 class="col-xs-12"><br>WEBopoly Login</h1>
-        <p class="col-xs-12">
-            <br>Melden Sie sich bitte an, um WEBopoly spielen zu können. Sie besitzen noch keinen Account? Dann können Sie sich <a href="login#registrierung" class="registerOverlay">hier registrieren</a>.
-        </p>
+        <div><h1 class="col-xs-12"><br>WEBopoly Login</h1></div>
+        <div class="text"><p class="col-xs-12">
+                <?php for ($i = 1; $i <= 5; $i++) {
+                    echo "<br>";
+                } ?>Melden Sie sich bitte an, um WEBopoly spielen zu können. Sie besitzen noch keinen Account? Dann können Sie sich <a href="login#registrierung" class="registerOverlay">hier registrieren</a>.
+        </p></div>
 
         <form method="post" action="login" class="form-horizontal col-xs-12">
             <?php if($this->errorPasswd == true): ?>

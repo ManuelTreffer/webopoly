@@ -22,6 +22,8 @@ $spieleranzahl = $this->spieleranzahl;
 
     </div>
 
+    <!--this table show the final score with the 4 best player ordered descending by points-->
+
     <div class="finalScore">
 
         <br>
@@ -41,6 +43,7 @@ $spieleranzahl = $this->spieleranzahl;
                 </thead>
                 <tbody>
 
+                <!--displays the values (like playerName, emoji, points) taken from the database-->
                 <?php foreach($this->playerboard as $key => $playerObj): ?>
                     <tr <?php if($key > 0): ?>class="opacity tr<?php echo ($key+1); ?>"<?php endif; ?>>
                         <th scope="row"><?php echo $key+1?></th>
@@ -50,11 +53,6 @@ $spieleranzahl = $this->spieleranzahl;
 
                     </tr>
                 <?php endforeach;  ?>
-
-
-
-
-
 
                 </tbody>
             </table>

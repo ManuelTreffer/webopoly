@@ -17,6 +17,9 @@
         <img src="img/logo.png" class="logoImage">
 
     </div>
+
+    <!-- Form to initialize the number of players -->
+
     <div class="playerQuantity">
 
         <br>
@@ -39,6 +42,8 @@
     </div><h6>Bitte gib einen Wert zwischen 1 und 8 ein!</h6></div>
 
 <div class="footer">
+
+    <!-- Link to our video instructions about the game -->
 
     <a class="nav-link" href="http://www.youtube.com" target="_blank">Ihr seid neu bei WEBopoly? Dann klickt hier für eine Anleitung! </a>
 

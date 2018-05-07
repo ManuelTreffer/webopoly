@@ -18,15 +18,19 @@ echo $this->header;
 
     <div id="main">
         <div class="row">
-            <p><h1 class="col-xs-12">Logout erfolgreich</h1><br></p>
+            <p><h1 class="col-xs-12"> <br>Logout erfolgreich</h1><br></p>
 
         </div>
         <div class="text">
-           <br><p class="col-xs-12">Sie sind jetzt abgemeldet. <a href="login" class="registerOverlay">Klicken Sie hier um sich wieder anzumelden.</a></p>
+           <br><p class="col-xs-12">Sie sind jetzt abgemeldet. <a href="login" class="registerOverlay"><br>Klicken Sie hier um sich wieder anzumelden.</a></p>
         </div>
     </div>
 
+    <div class="footer">
 
+        <a class="nav-link" href="impressum">Impressum</a>
+
+    </div>
 <?php
 
 echo $this->footer;

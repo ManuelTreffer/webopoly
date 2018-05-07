@@ -16,7 +16,7 @@
     <ul class="nav">
         <li class="nav-item">
 
-            <!--<a class="nav-link" href="../spieleranzahl/spieleranzahl.php">New Game/*</a>-->
+            <!--Navbar to our other pages-->
         </li>
         <li class="nav-item">
             <a class="nav-link" href="index">Spiel starten</a>
@@ -47,6 +47,11 @@
 
 
     </div>
+
+    <!--funny jumping shit made by jasmin kitzbichler
+
+
+    don't you think its awesome too? #awesomeComment-->
     <div class="imageJump mb-3"><img src="img/Emoji1Jump.gif" width="200px"></div></div>
 
 

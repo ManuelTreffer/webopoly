@@ -1,5 +1,7 @@
 <?php
 
+//adopts the playerenumber from index.php and saves it as $spieleranzahl
+
 $spieleranzahl = $this->spieleranzahl;
 
 ?>
@@ -14,69 +16,69 @@ $spieleranzahl = $this->spieleranzahl;
     <link rel="stylesheet" href="css/style.css">
 
 
-
 </head>
 
 <body>
 <script type="text/javascript">
+
+    //saves $spieleranzahl as qtyPlayers in JavaScript
+
     var qtyPlayers = <?php echo $spieleranzahl; ?>;
 </script>
-<div id="overlay" >
+<div id="overlay">
     <div id="secondOverlay">
         <div id="text">
             <p id="showCurrentPlayer">
-                
-                <img src="img/1emoji.png" id="playerEmoji" width="40px" > ist an der Reihe!
 
-                <!-- TODO: javascript auslagern! -->
+                <img src="img/1emoji.png" id="playerEmoji" width="40px"> ist an der Reihe!
 
+                <!--this function shows the current player Emoji in the overlay-->
 
                 <script>var jmax = <?php echo $spieleranzahl?>;
-                    var j=1;
+                    var j = 1;
+
                     function highlightPlayer() {
 
 
-                        document.getElementById("playerEmoji").src = "img/"+ j+ "emoji.png";
+                        document.getElementById("playerEmoji").src = "img/" + j + "emoji.png";
                         j++;
 
-                        if (j == jmax+1) {
+                        if (j == jmax + 1) {
                             j = 1;
                         }
-
 
 
                     }
 
                 </script>
             </p>
-<h1>
-            <div id="textQuestions">
-             <!--   <script type="text/javascript" src="../js/questionsArray.js"></script>-->
+            <h1>
 
+                <!-- Displays the questions/tasks from the allTasks.js -->
+                <div id="textQuestions">
 
+                    <br>
+                    <p id="demo">
+            </h1>
 
+            <!--Buttons, if task has been done, player gets the point, otherwise player does not get a point-->
+            <h4><br>Aufgabe erledigt?</h4>
+            <button id="pointsYesBtn" onclick="countScore(); off();" class="btn pointsYes btn-dark" value="0">JA
+            </button>
+            <button id="pointsNoBtn" onclick=" nextPlayer(); off();" class="btn pointsNo btn-danger">NEIN</button>
 
-
-                <br>
-                <p id="demo"></h1>
-                <h4><br>Aufgabe erledigt?</h4>
-                <button id="pointsYesBtn" onclick="countScore(); off();" class="btn pointsYes btn-dark" value="0">JA</button>
-                <button id="pointsNoBtn" onclick=" nextPlayer(); off();" class="btn pointsNo btn-danger">NEIN</button>
-
-                </p></div>
-        </div>
+            </p></div>
     </div>
+</div>
 </div>
 
 
-
-
+<!--Navigation to the other pages-->
 
 <div class="navbar">
     <ul class="nav">
         <li class="nav-item">
 
-            <!--<a class="nav-link" href="../spieleranzahl/spieleranzahl.php">New Game/*</a>-->
         </li>
         <li class="nav-item">
 
@@ -92,102 +94,92 @@ $spieleranzahl = $this->spieleranzahl;
         </li>
     </ul>
 </div>
+
+
 <div class="awesomeContainer">
-
-
-
-
-
     <div class="left">
+
+
 
         <div class="dice1">
 
-            <?php for($i = 0; $i <=10; $i++){
+            <?php for ($i = 0; $i <= 10; $i++) {
                 echo "<br>";
-            }?><button onclick="myFunction(); movePlayer()" class="btn btn-light">Würfeln</button>
+            } ?>
+            <button onclick="myFunction(); movePlayer()" class="btn btn-light">Würfeln</button>
 
 
-
-            <!-- Hier wird eine Random Zahl zwischen 1 und 6 generiert, die optisch als Würfel dargestellt wird.
-            Bei jedem erneuten Klick auf "Würfeln" wird eine neue Zahl generiert.
+            <!--
+            A random number from 1 to 6 is generated and saved in "randomNumber". The random number is displayed as a dice on the
+            left side of the page. On each click on the button "Würfeln" a new number is generated.
            -->
 
             <p id="randomNumber"></p>
-
-
-            <!-- TODO: auslagern-->
-
-
-         <script>
+            <script>
 
 
                 var randomNumber;
+
                 function myFunction() {
                     randomNumber = Math.round(Math.random() * (1 - 6)) + 6;
                     //document.getElementById("randomNumber").innerHTML = randomNumber;
                     document.getElementById("dice").src = "img/" + randomNumber + ".png";
 
 
-
-
-
                 }
+
+
+                /*var zugSpieler saves the current player*/
                 var zugSpieler = 1;
-                //   var playerPosition = [1, 1, 1, 1, 1, 1, 1, 1];
 
-
+                /*a new array is generated and initialized*/
                 var playerPosition = [];
 
-                for(i = 0; i < qtyPlayers; i++) {
+                for (i = 0; i < qtyPlayers; i++) {
                     playerPosition[i] = 1;
                 }
 
+                /*the function movePlayer() gets called when you click on the "Würfeln" button
+                * it adds the random number to the current playerPosition
+                * if the number is higher than the maximum number of fields, we subtract this number of fields*/
+                function movePlayer() {
 
+                    if ((playerPosition[zugSpieler - 1] + randomNumber) > 12) {
 
-
-
-
-                function movePlayer(){
-
-                    if((playerPosition[zugSpieler-1]+randomNumber)>12){
-
-                        playerPosition[zugSpieler-1]=playerPosition[zugSpieler-1]+randomNumber-12;
+                        playerPosition[zugSpieler - 1] = playerPosition[zugSpieler - 1] + randomNumber - 12;
                     } else {
-                        playerPosition[zugSpieler-1]+=randomNumber;
+                        playerPosition[zugSpieler - 1] += randomNumber;
                     }
 
-                    document.getElementById("cell"+playerPosition[zugSpieler-1]).appendChild(document.getElementById('player' + zugSpieler)).innerHTML;
+                    document.getElementById("cell" + playerPosition[zugSpieler - 1]).appendChild(document.getElementById('player' + zugSpieler)).innerHTML;
 
 
                     on();
                     getTask();
                     highlightPlayer();
 
-                    //formel prüfen..
+                    //resets the number of the current player to 1 if the maximum of players has been reached
                     zugSpieler = (zugSpieler + 1) % (qtyPlayers + 1);
 
-                    if(zugSpieler == 0)
-                    {
+                    if (zugSpieler == 0) {
                         zugSpieler = 1;
                     }
-
 
                 }
 
 
             </script>
 
-<br>
-            <img src="img/1.png" id="dice" width="100px" >
+            <br>
+            <img src="img/1.png" id="dice" width="100px">
         </div>
 
 
     </div>
     <div class="middle">
 
-
-        <!-- TODO: probieren, ob man katFragen etc löschen kann -->
-
+        <!--this is our gameboard - it consists of 12 fields and our logo in the middle
+        each cell has its own id-->
 
         <div class="gameboard">
             <div class="reihe">
@@ -235,10 +227,15 @@ $spieleranzahl = $this->spieleranzahl;
             <div class="reihe">
                 <div class="cell"><img src="img/truth.png" class="spacer">
                     <div class="field" id="cell1">
+
+                        <!--Players start here, shows each emoji of the players-->
+
                         <?php
-                        for($r = 0; $r<$spieleranzahl; $r++){?>
-                            <img width="200px" src="img/<?php echo $r+1; ?>emoji.png"  id="player<?php echo $r+1; ?>" class="playerFigure">
-                        <?php }?>
+                        for ($r = 0; $r < $spieleranzahl; $r++) {
+                            ?>
+                            <img width="200px" src="img/<?php echo $r + 1; ?>emoji.png" id="player<?php echo $r + 1; ?>"
+                                 class="playerFigure">
+                        <?php } ?>
                     </div>
                 </div>
                 <div class="cell"><img src="img/drink.png" class="spacer">
@@ -255,43 +252,46 @@ $spieleranzahl = $this->spieleranzahl;
                 </div>
             </div>
         </div>
-
-
     </div>
     <div class="right">
 
-      <div>
-        <img src="img/pointtable.png" class="pointtableImg" width="250px"></div>
-        <div class="pointtable"><table class="table">
-            <thead>
-            <tr>
-                <th scope="col">#</th>
-                <th scope="col">Emoji</th>
-                <th scope="col">Spielername</th>
-                <th scope="col">Punkte</th>
-            </tr>
-            </thead>
-            <tbody>
-            <?php foreach($this->players as $playerObj): ?>
-            <tr>
-                <th scope="row"><?php echo $playerObj->id; ?></th>
-                <td><img src="img/<?php echo $playerObj->id; ?>emoji.png" width="35px"></td>
-                <td><?php echo $playerObj->player; ?></td>
+        <!--shows the current points of each player-->
 
-                <td id="<?php echo $playerObj->id; ?>" ></td>
-            </tr>
-            <?php endforeach; ?>
+        <div>
+            <img src="img/pointtable.png" class="pointtableImg" width="250px"></div>
+        <div class="pointtable">
+            <table class="table">
+                <thead>
+                <tr>
+                    <th scope="col">#</th>
+                    <th scope="col">Emoji</th>
+                    <th scope="col">Spielername</th>
+                    <th scope="col">Punkte</th>
+                </tr>
+                </thead>
+                <tbody>
 
+                <!--adopts the playerName, the player emoji and the current points from the database and inserts those values in this table-->
+                <?php foreach ($this->players as $playerObj): ?>
+                    <tr>
+                        <th scope="row"><?php echo $playerObj->id; ?></th>
+                        <td><img src="img/<?php echo $playerObj->id; ?>emoji.png" width="35px"></td>
+                        <td><?php echo $playerObj->player; ?></td>
 
-            </tbody>
-        </table>
-    </div>
+                        <td id="<?php echo $playerObj->id; ?>"></td>
+                    </tr>
+                <?php endforeach; ?>
+                </tbody>
+            </table>
+        </div>
 
-     <script type="text/javascript">
+        <!--this script checks the current playerPosition and displays either the Questions/Tasks/Alcohol in the overlay above-->
+        <script type="text/javascript">
 
             function getTask() {
 
-                switch(playerPosition[zugSpieler-1]){
+
+                switch (playerPosition[zugSpieler - 1]) {
                     case 1:
                     case 4:
                     case 7:
@@ -310,17 +310,19 @@ $spieleranzahl = $this->spieleranzahl;
                     case 12:
                         get_Alcohol();
                         break;
+
+                        console.log(playerPosition[zugSpieler - 1]);
+                        console.log(zugSpieler);
                 }
+
+
             }
 
 
         </script>
 
 
-
-
         <script type="text/javascript">
-
 
 
             function on() {

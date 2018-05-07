@@ -23,8 +23,14 @@
         <br>
         <form action="game" method="post">
 
+
+            <!-- adopts the number of players from the index.php and shows an error message if the number is not correct
+            it presents you a form with preset emojis (your player figure) and the user can insert the name of each player-->
+
+
+
             <?php
-            if($this->spieleranzahl == 0 || $this->spieleranzahl > 8){
+            if($this->spieleranzahl <= 0 || $this->spieleranzahl > 8){
                 echo "Geben Sie eine Zahl zwischen 1 und 8 ein!";
                 echo "<br><br><a href=\"index\" class=\"back\">Zurück</a>";
             }else{
@@ -41,7 +47,7 @@
 
 
             </div>
-            <?php if($this->spieleranzahl == 0 || $this->spieleranzahl > 8) {
+            <?php if($this->spieleranzahl <= 0 || $this->spieleranzahl > 8) {
             }
             else{
                 echo "<input class ='btn btn-light' type='submit' value='Starten'><br><a href=\"index\" class=\"back\">Zurück</a>";

@@ -65,9 +65,9 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
 
 /* line 10, ../scss/style.scss */
 body {
-  /*font-family: "DK Lemon Yellow Sun";
-  font-family: "Skia";*/
-  font-family: "Arial Rounded MT Bold";
+  font-family: "DK Lemon Yellow Sun";
+  /*font-family: "Skia";
+  font-family: "Arial Rounded MT Bold";*/
   /*display: flex;*/
   color: #000000;
   font-size: 17px;
