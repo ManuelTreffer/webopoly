@@ -1,5 +1,5 @@
 # webopoly
-Webopoly, the world's leading drinking game made by the WEB students in Kufstein!
+Webopoly, the world's leading fun game made by the WEB students in Kufstein!
 
 # What is Webopoly?
 Webopoly is a fun game you either can play alone (why not?) or together in a group of max. 8 people.
