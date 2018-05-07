@@ -13,7 +13,6 @@ The rules are very simple.
   -Drink something
   -Do something
   -Answer a question
-  -SURPRISE
 
 You decide if you get the point or not. So, please be honest to yourself.
 

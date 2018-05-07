@@ -45,7 +45,7 @@
 
     <!-- Link to our video instructions about the game -->
 
-    <a class="nav-link" href="http://www.youtube.com" target="_blank">Ihr seid neu bei WEBopoly? Dann klickt hier für eine Anleitung! </a>
+    <a class="nav-link" href="https://youtu.be/6_OB6ZAsG58" target="_blank">Ihr seid neu bei WEBopoly? Dann klickt hier für eine Anleitung! </a>
 
 </div>
 

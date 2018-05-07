@@ -22,7 +22,7 @@
             <a class="nav-link" href="index">Spiel starten</a>
         </li>
         <li class="nav-item">
-            <a class="nav-link" href="http://www.youtube.com" target="_blank">Anleitung</a>
+            <a class="nav-link" href="https://youtu.be/6_OB6ZAsG58" target="_blank">Anleitung</a>
         </li>
 
         <li class="nav-item">
@@ -39,6 +39,12 @@
     <div class="impressumText mb-3">
         <br>
         <p>Hallo, danke, dass ihr unser Spiel gespielt habt! Für Fragen stehen wir gerne zur Verfügung bzw. haben ein cooles Video dazu gedreht!</p>
+        <br>
+        <br>
+        <p>"Gemütliches Zusammensitzen wird in Zukunft neu geschrieben: WEBopoly!"</p>
+        <br>
+        <p>- Manuel Treffer, Marco Wilhelm, 26. März 2018</p>
+        <br>
         <br>
         <p>PS: Wusstet ihr schon, dass unser Spiel erst ab 18 Jahren ist? Wir fördern den aktiven Alkoholkonsum natürlich nicht!</p>
         <br>

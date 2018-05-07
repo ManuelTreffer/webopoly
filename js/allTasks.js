@@ -13,11 +13,6 @@ var aufgabe = [
     "Tausche Platz mit der Person links neben dir",
     "Tausche Platz mit der Person rechts neben dir "
 
-
-
-
-
-
 ];
 
 function get_Aufgabe() {

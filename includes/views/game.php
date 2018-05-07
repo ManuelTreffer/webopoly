@@ -86,7 +86,7 @@ $spieleranzahl = $this->spieleranzahl;
 
         </li>
         <li class="nav-item">
-            <a class="nav-link" href="http://www.youtube.com" target="_blank">Anleitung</a>
+            <a class="nav-link" href="https://youtu.be/6_OB6ZAsG58" target="_blank">Anleitung</a>
         </li>
 
         <li class="nav-item">
@@ -344,7 +344,7 @@ $spieleranzahl = $this->spieleranzahl;
 <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
         integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
         crossorigin="anonymous"></script>
-<script src="../../js/bootstrap.min.js"
+<script src="js/bootstrap.min.js"
         integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
         crossorigin="anonymous"></script>
 </body>
