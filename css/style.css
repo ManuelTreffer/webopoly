@@ -155,7 +155,7 @@ body {
 
 /* line 96, ../scss/style.scss */
 #dice {
-  border-radius: 17px;
+  border-radius: 8px;
   margin: auto;
   display: table-cell;
   vertical-align: center;
