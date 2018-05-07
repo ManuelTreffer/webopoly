@@ -21,7 +21,7 @@ Winner is the person with the highest score.
 
 
 --------------
-# Die Aufteilung finden Sie im Ordner "Sonstige Datein" --> aufteilungProjekt.docx
+# Die Aufteilung finden Sie im Ordner "Sonstige Daten" --> aufteilungProjekt.docx
 --------------
 
 
