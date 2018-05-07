@@ -14,7 +14,7 @@ echo $this->header;
     <link rel="stylesheet" href="css/bootstrap.min.css">
     <link rel="stylesheet" href="css/background.css">
     <link rel="stylesheet" href="css/style.css">
-   
+
 
 </head>
 <div id="main">

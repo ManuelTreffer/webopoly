@@ -65,25 +65,25 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
 
 /* line 10, ../scss/style.scss */
 body {
-  font-family: "DK Lemon Yellow Sun";
-  /*font-family: "Skia";
-  font-family: "Arial Rounded MT Bold";*/
+  font-family: "DKLemonYellowSun";
+  /* font-family: "Skia";
+   font-family: "Arial Rounded MT Bold";*/
   /*display: flex;*/
   color: #000000;
   font-size: 17px;
 }
 
-/* line 21, ../scss/style.scss */
+/* line 22, ../scss/style.scss */
 .navbar {
   background-color: #ffffff;
 }
 
-/* line 25, ../scss/style.scss */
+/* line 26, ../scss/style.scss */
 .nav-link {
   color: #000000;
 }
 
-/* line 29, ../scss/style.scss */
+/* line 30, ../scss/style.scss */
 .nav-link:hover {
   color: #ffffff;
   background-color: #708090;
@@ -92,7 +92,7 @@ body {
   border-radius: 5px;
 }
 
-/* line 37, ../scss/style.scss */
+/* line 38, ../scss/style.scss */
 .left {
   width: 15%;
   align-items: center;
@@ -100,13 +100,13 @@ body {
   height: 400px;
 }
 
-/* line 44, ../scss/style.scss */
+/* line 45, ../scss/style.scss */
 .middle {
   width: 45%;
   padding-top: 30px;
 }
 
-/* line 50, ../scss/style.scss */
+/* line 51, ../scss/style.scss */
 .right {
   /* padding-right: 5%;
    padding-top: 30px;
@@ -120,20 +120,20 @@ body {
   /*background-color: #e0a800;*/
 }
 
-/* line 67, ../scss/style.scss */
+/* line 68, ../scss/style.scss */
 .pointtableImg {
   padding-left: 60px;
   padding-bottom: 20px;
 }
 
-/* line 72, ../scss/style.scss */
+/* line 73, ../scss/style.scss */
 .pointtable {
   padding-top: 20px;
   color: #ffffff;
   text-shadow: 1px 1px 2px #000000;
 }
 
-/* line 78, ../scss/style.scss */
+/* line 79, ../scss/style.scss */
 .board {
   margin: auto;
   position: absolute;
@@ -141,19 +141,19 @@ body {
   height: 80%;
 }
 
-/* line 85, ../scss/style.scss */
+/* line 86, ../scss/style.scss */
 .dice1 {
   margin: auto;
   display: table;
 }
 
-/* line 91, ../scss/style.scss */
+/* line 92, ../scss/style.scss */
 .dice1 image {
   display: table-cell;
   vertical-align: center;
 }
 
-/* line 96, ../scss/style.scss */
+/* line 97, ../scss/style.scss */
 #dice {
   border-radius: 8px;
   margin: auto;
@@ -164,21 +164,21 @@ body {
 /*
 !!!!!!SO ZENTRIERT MAN DEN INHALT EINER DIV BOX!!!!!!!!!!
 */
-/* line 107, ../scss/style.scss */
+/* line 108, ../scss/style.scss */
 .logo {
   display: flex;
   align-items: center;
   justify-content: center;
 }
 
-/* line 114, ../scss/style.scss */
+/* line 115, ../scss/style.scss */
 .logoImage {
   width: 20%;
   margin: auto;
   padding-top: 20px;
 }
 
-/* line 122, ../scss/style.scss */
+/* line 123, ../scss/style.scss */
 .playerQuantity {
   padding-top: 2.5em;
   align-items: center;
@@ -187,13 +187,13 @@ body {
   margin: auto;
 }
 
-/* line 132, ../scss/style.scss */
+/* line 133, ../scss/style.scss */
 .inner {
   display: flex;
   flex-direction: column;
 }
 
-/* line 138, ../scss/style.scss */
+/* line 139, ../scss/style.scss */
 .btn {
   align-items: center;
   justify-content: center;
@@ -201,7 +201,7 @@ body {
   border-radius: 5px;
 }
 
-/* line 147, ../scss/style.scss */
+/* line 148, ../scss/style.scss */
 .back {
   align-items: center;
   justify-content: center;
@@ -209,24 +209,24 @@ body {
   margin: auto;
 }
 
-/* line 155, ../scss/style.scss */
+/* line 156, ../scss/style.scss */
 .back a {
   text-decoration: none;
   color: #ffffff;
 }
 
-/* line 160, ../scss/style.scss */
+/* line 161, ../scss/style.scss */
 .back:visited {
   color: #ffffff;
   text-decoration: none;
 }
 
-/* line 165, ../scss/style.scss */
+/* line 166, ../scss/style.scss */
 h3 {
   text-align: center;
 }
 
-/* line 169, ../scss/style.scss */
+/* line 170, ../scss/style.scss */
 .playerNames {
   align-items: center;
   justify-content: center;
@@ -234,7 +234,7 @@ h3 {
   margin: auto;
 }
 
-/* line 178, ../scss/style.scss */
+/* line 179, ../scss/style.scss */
 .mb-3 {
   padding-top: 0;
   padding-bottom: 0;
@@ -242,13 +242,13 @@ h3 {
   margin-bottom: 0;
 }
 
-/* line 185, ../scss/style.scss */
+/* line 186, ../scss/style.scss */
 .awesomeContainer {
   height: 800px;
   display: flex;
 }
 
-/* line 191, ../scss/style.scss */
+/* line 192, ../scss/style.scss */
 .footer {
   background-color: #ffffff;
   color: #000000;
@@ -259,29 +259,29 @@ h3 {
   text-align: center;
 }
 
-/* line 203, ../scss/style.scss */
+/* line 204, ../scss/style.scss */
 .rankingFinal {
   width: 40%;
   margin: auto;
   font-weight: bold;
 }
 
-/* line 210, ../scss/style.scss */
+/* line 211, ../scss/style.scss */
 .tr2 {
   opacity: 0.8;
 }
 
-/* line 214, ../scss/style.scss */
+/* line 215, ../scss/style.scss */
 .tr3 {
   opacity: 0.6;
 }
 
-/* line 217, ../scss/style.scss */
+/* line 218, ../scss/style.scss */
 .tr4 {
   opacity: 0.4;
 }
 
-/* line 221, ../scss/style.scss */
+/* line 222, ../scss/style.scss */
 #overlay {
   position: fixed;
   /* Sit on top of the page content */
@@ -303,7 +303,7 @@ h3 {
   /* Add a pointer on hover */
 }
 
-/* line 235, ../scss/style.scss */
+/* line 236, ../scss/style.scss */
 #secondOverlay {
   position: fixed;
   /* Sit on top of the page content */
@@ -326,18 +326,18 @@ h3 {
   /* Add a pointer on hover */
 }
 
-/* line 253, ../scss/style.scss */
+/* line 254, ../scss/style.scss */
 #demo {
   padding-left: -50px;
 }
 
-/* line 259, ../scss/style.scss */
+/* line 260, ../scss/style.scss */
 .container {
   height: 600px;
   width: 375px;
 }
 
-/* line 265, ../scss/style.scss */
+/* line 266, ../scss/style.scss */
 .col-sm-3 {
   background-color: lightsalmon;
   height: 100px;
@@ -348,7 +348,7 @@ h3 {
   border-style: solid;
 }
 
-/* line 276, ../scss/style.scss */
+/* line 277, ../scss/style.scss */
 .col-sm-6 {
   background: url("../images/logo.png");
   -webkit-background-size: 190px;
@@ -359,12 +359,12 @@ h3 {
   margin: 0;
 }
 
-/* line 287, ../scss/style.scss */
+/* line 288, ../scss/style.scss */
 .emojisSmall {
   width: 40px;
 }
 
-/* line 294, ../scss/style.scss */
+/* line 295, ../scss/style.scss */
 .boardTable {
   /*padding: 40px;*/
   width: 100%;
@@ -372,19 +372,19 @@ h3 {
   overflow: visible;
 }
 
-/* line 302, ../scss/style.scss */
+/* line 303, ../scss/style.scss */
 .boardTable img {
   width: 400px;
   height: 300px;
 }
 
-/* line 307, ../scss/style.scss */
+/* line 308, ../scss/style.scss */
 .tableRow {
   height: 25%;
   overflow: visible;
 }
 
-/* line 314, ../scss/style.scss */
+/* line 315, ../scss/style.scss */
 .cell {
   display: block;
   /*width: auto;*/
@@ -396,50 +396,50 @@ h3 {
   /*box-sizing: border-box;*/
 }
 
-/* line 328, ../scss/style.scss */
+/* line 329, ../scss/style.scss */
 .rot1 {
   transform: rotate(90deg);
   height: 10px;
   width: 10px;
 }
 
-/* line 334, ../scss/style.scss */
+/* line 335, ../scss/style.scss */
 .mb-3 {
   align-items: center;
   justify-content: center;
   margin: auto;
 }
 
-/* line 341, ../scss/style.scss */
+/* line 342, ../scss/style.scss */
 .cell img {
   width: 25px;
   height: 25px;
 }
 
-/* line 347, ../scss/style.scss */
+/* line 348, ../scss/style.scss */
 .cell .spacer {
   width: 100%;
   height: auto;
 }
 
-/* line 354, ../scss/style.scss */
+/* line 355, ../scss/style.scss */
 .boardLeft, .boardRight {
   width: 25%;
   float: left;
 }
 
-/* line 359, ../scss/style.scss */
+/* line 360, ../scss/style.scss */
 .boardMiddle {
   width: 50%;
   float: left;
 }
 
-/* line 364, ../scss/style.scss */
+/* line 365, ../scss/style.scss */
 .boardLeft .cell, .boardRight .cell {
   width: 100%;
 }
 
-/* line 369, ../scss/style.scss */
+/* line 370, ../scss/style.scss */
 .boardMiddle img {
   width: 90%;
   height: auto;
@@ -448,7 +448,7 @@ h3 {
   margin: auto;
 }
 
-/* line 377, ../scss/style.scss */
+/* line 378, ../scss/style.scss */
 .field {
   position: absolute;
   left: 0;
@@ -457,7 +457,7 @@ h3 {
   top: 0;
 }
 
-/* line 386, ../scss/style.scss */
+/* line 387, ../scss/style.scss */
 .inner .impressumText {
   font-weight: bold;
   align-items: center;
@@ -467,14 +467,14 @@ h3 {
   text-shadow: 1px 1px 2px #000000;
 }
 
-/* line 396, ../scss/style.scss */
+/* line 397, ../scss/style.scss */
 h6 {
   align-items: center;
   justify-content: center;
   margin: auto;
 }
 
-/* line 403, ../scss/style.scss */
+/* line 404, ../scss/style.scss */
 .cell .playerFigure {
   width: 30%;
   height: auto;
@@ -482,7 +482,7 @@ h6 {
   padding-top: 10px;
 }
 
-/* line 412, ../scss/style.scss */
+/* line 413, ../scss/style.scss */
 #text {
   position: absolute;
   top: 50%;
@@ -494,45 +494,45 @@ h6 {
   -ms-transform: translate(-60%, -50%);
 }
 
-/* line 423, ../scss/style.scss */
+/* line 424, ../scss/style.scss */
 .registerOverlay {
   color: #708090;
 }
 
-/* line 427, ../scss/style.scss */
+/* line 428, ../scss/style.scss */
 .registerOverlay:hover {
   color: #ffffff;
   text-shadow: 1px 1px 2px #000000;
   text-decoration: none;
 }
 
-/* line 433, ../scss/style.scss */
+/* line 434, ../scss/style.scss */
 .col-xs-12 .form-group {
   padding-left: 20px;
 }
 
-/* line 436, ../scss/style.scss */
+/* line 437, ../scss/style.scss */
 .col-xs-12 .loginBtn {
   margin-left: 35px;
 }
 
-/* line 440, ../scss/style.scss */
+/* line 441, ../scss/style.scss */
 .modal-body .col-xs-12 {
   padding-left: 20px;
 }
 
-/* line 444, ../scss/style.scss */
+/* line 445, ../scss/style.scss */
 h1 {
   font-size: 30px;
 }
 
-/* line 447, ../scss/style.scss */
+/* line 448, ../scss/style.scss */
 h2 {
   font-size: 25px;
   text-align: center;
 }
 
-/* line 451, ../scss/style.scss */
+/* line 452, ../scss/style.scss */
 h4 {
   font-size: 18px;
   line-height: 125%;

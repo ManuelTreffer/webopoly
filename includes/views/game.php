@@ -311,8 +311,7 @@ $spieleranzahl = $this->spieleranzahl;
                         get_Alcohol();
                         break;
 
-                        console.log(playerPosition[zugSpieler - 1]);
-                        console.log(zugSpieler);
+
                 }
 
 
